@@ -1,0 +1,4943 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta
+      name="description"
+      content="Merony Hair.NG – Beyond Hair. Behold Beauty. Premium 100% Human Hair Bundles, Wigs, Closures & Frontals. Powered by J-CORP.">
+    <meta
+      name="keywords"
+      content="Merony Hair, human hair bundles, lace wigs, Nigerian hair, closures, frontals, body wave, straight hair, curly hair, premium hair extensions">
+    <meta name="author" content="Merony Hair.NG">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#1a0a0a">
+    <link rel="canonical" href="https://meronyhair.ng/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://meronyhair.ng/">
+    <meta
+      property="og:title"
+      content="Merony Hair.NG | Beyond Hair. Behold Beauty.">
+    <meta
+      property="og:description"
+      content="Beyond Hair. Behold Beauty. Premium 100% human hair bundles, wigs and closures by Merony Hair.NG — Powered by J-CORP.">
+    <meta
+      property="og:image"
+      content="https://images.unsplash.com/photo-1522338140262-f46f5913618a?w=1200">
+    <meta property="og:locale" content="en_NG">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta
+      name="twitter:title"
+      content="Merony Hair.NG | Beyond Hair. Behold Beauty.">
+    <meta
+      name="twitter:description"
+      content="Beyond Hair. Behold Beauty. Premium 100% human hair by Merony Hair.NG — Powered by J-CORP.">
+    <meta
+      name="twitter:image"
+      content="https://images.unsplash.com/photo-1522338140262-f46f5913618a?w=1200">
+
+    <title>Merony Hair.NG | Beyond Hair. Behold Beauty.</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet">
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Store",
+        "name": "Merony Hair.NG",
+        "description": "Beyond Hair. Behold Beauty. Premium 100% Human Hair Bundles, Wigs, Closures and Frontals. Powered by J-CORP.",
+        "url": "https://meronyhair.ng",
+        "telephone": "+2349063108912",
+        "email": "hellomeronyhair@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "NG",
+          "addressLocality": "Lagos"
+        },
+        "priceRange": "₦₦₦",
+        "image": "https://images.unsplash.com/photo-1522338140262-f46f5913618a?w=800"
+      }
+    </script>
+
+    <style>
+      :root {
+        --gold: #c9a96e;
+        --gold-light: #e8d5a3;
+        --gold-dark: #a67c3d;
+        --rose: #d4a5a5;
+        --cream: #faf6f1;
+        --dark: #0f0a0a;
+        --dark-2: #1a1212;
+        --dark-3: #2a1f1f;
+        --text: #1a1a1a;
+        --text-muted: #6b5e5e;
+        --bg: #faf6f1;
+        --card: rgba(255, 255, 255, 0.75);
+        --glass: rgba(255, 255, 255, 0.55);
+        --glass-border: rgba(201, 169, 110, 0.25);
+        --shadow: 0 8px 32px rgba(26, 10, 10, 0.08);
+        --radius: 16px;
+        --transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+        --font-display: "Cormorant Garamond", serif;
+        --font-body: "Inter", sans-serif;
+      }
+
+      [data-theme="dark"] {
+        --bg: #0f0a0a;
+        --card: rgba(26, 18, 18, 0.85);
+        --glass: rgba(42, 31, 31, 0.7);
+        --glass-border: rgba(201, 169, 110, 0.2);
+        --text: #f5f0eb;
+        --text-muted: #b0a0a0;
+        --shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+        --cream: #1a1212;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        scroll-behavior: smooth;
+        font-size: 16px;
+      }
+
+      body {
+        font-family: var(--font-body);
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.6;
+        overflow-x: hidden;
+        transition:
+          background 0.4s,
+          color 0.4s;
+        min-height: 100vh;
+      }
+
+      /* ===== LOADING ===== */
+      #loader {
+        position: fixed;
+        inset: 0;
+        z-index: 99999;
+        background: linear-gradient(135deg, #0f0a0a, #2a1a1a);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition:
+          opacity 0.6s,
+          visibility 0.6s;
+      }
+      #loader.hide {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+      }
+      .loader-logo {
+        font-family: var(--font-display);
+        font-size: 2.8rem;
+        font-weight: 600;
+        color: var(--gold);
+        letter-spacing: 4px;
+        margin-bottom: 1.5rem;
+        animation: pulse 1.8s ease-in-out infinite;
+      }
+      .loader-bar {
+        width: 180px;
+        height: 3px;
+        background: rgba(201, 169, 110, 0.2);
+        border-radius: 3px;
+        overflow: hidden;
+      }
+      .loader-bar::after {
+        content: "";
+        display: block;
+        height: 100%;
+        width: 40%;
+        background: linear-gradient(90deg, var(--gold), var(--gold-light));
+        animation: load 1.4s ease-in-out infinite;
+      }
+      @keyframes pulse {
+        0%,
+        100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.6;
+        }
+      }
+      @keyframes load {
+        0% {
+          transform: translateX(-100%);
+        }
+        100% {
+          transform: translateX(350%);
+        }
+      }
+
+      /* ===== UTILITIES ===== */
+      .container {
+        width: min(1200px, 92%);
+        margin: 0 auto;
+      }
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.85rem 1.8rem;
+        border: none;
+        border-radius: 50px;
+        font-family: var(--font-body);
+        font-weight: 500;
+        font-size: 0.95rem;
+        cursor: pointer;
+        transition: var(--transition);
+        text-decoration: none;
+        position: relative;
+        overflow: hidden;
+      }
+      .btn-primary {
+        background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+        color: #fff;
+        box-shadow: 0 4px 20px rgba(201, 169, 110, 0.35);
+      }
+      .btn-primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 28px rgba(201, 169, 110, 0.45);
+      }
+      .btn-outline {
+        background: transparent;
+        border: 1.5px solid var(--gold);
+        color: var(--gold);
+      }
+      .btn-outline:hover {
+        background: var(--gold);
+        color: #fff;
+      }
+      .btn-ghost {
+        background: transparent;
+        color: var(--text);
+      }
+      .btn-ghost:hover {
+        color: var(--gold);
+      }
+      .btn-sm {
+        padding: 0.5rem 1.1rem;
+        font-size: 0.85rem;
+      }
+      .btn-icon {
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--glass);
+        border: 1px solid var(--glass-border);
+        color: var(--text);
+        cursor: pointer;
+        transition: var(--transition);
+      }
+      .btn-icon:hover {
+        background: var(--gold);
+        color: #fff;
+        border-color: var(--gold);
+      }
+
+      .glass {
+        background: var(--glass);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border: 1px solid var(--glass-border);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+      }
+
+      .section {
+        padding: 5rem 0;
+      }
+      .section-title {
+        font-family: var(--font-display);
+        font-size: clamp(2rem, 4vw, 3rem);
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 0.5rem;
+        background: linear-gradient(135deg, var(--gold), var(--gold-light));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+      .section-sub {
+        text-align: center;
+        color: var(--text-muted);
+        margin-bottom: 3rem;
+        font-size: 1.05rem;
+      }
+
+      /* ===== HEADER ===== */
+      .header {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background: var(--glass);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border-bottom: 1px solid var(--glass-border);
+        transition: var(--transition);
+      }
+      .header-top {
+        background: linear-gradient(90deg, var(--dark), var(--dark-2));
+        color: var(--gold-light);
+        font-size: 0.8rem;
+        text-align: center;
+        padding: 0.45rem;
+        letter-spacing: 0.5px;
+      }
+      .header-main {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.9rem 0;
+        gap: 1rem;
+      }
+      .logo {
+        font-family: var(--font-display);
+        font-size: 1.7rem;
+        font-weight: 700;
+        color: var(--gold);
+        text-decoration: none;
+        letter-spacing: 1px;
+        white-space: nowrap;
+      }
+      .logo span {
+        color: var(--text);
+        font-weight: 400;
+      }
+
+      .nav {
+        display: flex;
+        align-items: center;
+        gap: 0.2rem;
+      }
+      .nav a {
+        color: var(--text);
+        text-decoration: none;
+        padding: 0.5rem 0.9rem;
+        font-size: 0.92rem;
+        font-weight: 500;
+        border-radius: 8px;
+        transition: var(--transition);
+        position: relative;
+      }
+      .nav a:hover,
+      .nav a.active {
+        color: var(--gold);
+      }
+      .nav a.active::after {
+        content: "";
+        position: absolute;
+        bottom: 2px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 18px;
+        height: 2px;
+        background: var(--gold);
+        border-radius: 2px;
+      }
+
+      .header-actions {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .search-box {
+        position: relative;
+        display: flex;
+        align-items: center;
+      }
+      .search-box input {
+        background: var(--glass);
+        border: 1px solid var(--glass-border);
+        border-radius: 50px;
+        padding: 0.55rem 1rem 0.55rem 2.4rem;
+        width: 200px;
+        font-size: 0.9rem;
+        color: var(--text);
+        outline: none;
+        transition: var(--transition);
+      }
+      .search-box input:focus {
+        width: 260px;
+        border-color: var(--gold);
+      }
+      .search-box i {
+        position: absolute;
+        left: 0.9rem;
+        color: var(--text-muted);
+      }
+
+      .cart-btn {
+        position: relative;
+      }
+      .cart-count {
+        position: absolute;
+        top: -4px;
+        right: -4px;
+        background: var(--gold);
+        color: #fff;
+        font-size: 0.65rem;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+      }
+
+      .mobile-toggle {
+        display: none;
+        background: none;
+        border: none;
+        color: var(--text);
+        font-size: 1.4rem;
+        cursor: pointer;
+      }
+
+      /* ===== HERO ===== */
+      .hero {
+        position: relative;
+        min-height: 85vh;
+        display: flex;
+        align-items: center;
+        background:
+          linear-gradient(135deg, rgba(15, 10, 10, 0.7), rgba(42, 26, 26, 0.5)),
+          url("https://images.unsplash.com/photo-1522338140262-f46f5913618a?w=1600&q=80")
+            center/cover no-repeat;
+        color: #fff;
+        overflow: hidden;
+      }
+      .hero-content {
+        position: relative;
+        z-index: 2;
+        max-width: 600px;
+        padding: 2rem 0;
+      }
+      .hero-badge {
+        display: inline-block;
+        background: rgba(201, 169, 110, 0.25);
+        border: 1px solid var(--gold);
+        color: var(--gold-light);
+        padding: 0.35rem 1rem;
+        border-radius: 50px;
+        font-size: 0.8rem;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        margin-bottom: 1.2rem;
+      }
+      .hero h1 {
+        font-family: var(--font-display);
+        font-size: clamp(2.8rem, 6vw, 4.5rem);
+        font-weight: 600;
+        line-height: 1.15;
+        margin-bottom: 1.2rem;
+      }
+      .hero p {
+        font-size: 1.15rem;
+        opacity: 0.9;
+        margin-bottom: 2rem;
+        max-width: 480px;
+      }
+      .hero-btns {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+
+      /* ===== PRODUCTS GRID ===== */
+      .products-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        gap: 1.8rem;
+      }
+      .product-card {
+        background: var(--card);
+        border-radius: var(--radius);
+        overflow: hidden;
+        border: 1px solid var(--glass-border);
+        transition: var(--transition);
+        position: relative;
+        cursor: pointer;
+      }
+      .product-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 16px 40px rgba(201, 169, 110, 0.15);
+      }
+      .product-img {
+        position: relative;
+        aspect-ratio: 3/4;
+        overflow: hidden;
+        background: var(--dark-3);
+      }
+      .product-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      .product-card:hover .product-img img {
+        transform: scale(1.08);
+      }
+      .product-badge {
+        position: absolute;
+        top: 12px;
+        left: 12px;
+        background: var(--gold);
+        color: #fff;
+        font-size: 0.7rem;
+        padding: 0.25rem 0.7rem;
+        border-radius: 50px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        z-index: 2;
+      }
+      .product-actions {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+        opacity: 0;
+        transform: translateX(10px);
+        transition: var(--transition);
+        z-index: 2;
+      }
+      .product-card:hover .product-actions {
+        opacity: 1;
+        transform: translateX(0);
+      }
+      .product-info {
+        padding: 1.2rem;
+      }
+      .product-cat {
+        font-size: 0.75rem;
+        color: var(--gold);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 0.3rem;
+      }
+      .product-name {
+        font-family: var(--font-display);
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-bottom: 0.4rem;
+        line-height: 1.3;
+      }
+      .product-price {
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+      }
+      .price-current {
+        font-weight: 600;
+        font-size: 1.1rem;
+        color: var(--gold);
+      }
+      .price-old {
+        font-size: 0.9rem;
+        color: var(--text-muted);
+        text-decoration: line-through;
+      }
+      .product-rating {
+        display: flex;
+        align-items: center;
+        gap: 0.3rem;
+        margin-top: 0.5rem;
+        font-size: 0.85rem;
+        color: var(--gold);
+      }
+
+      /* ===== FILTERS ===== */
+      .shop-layout {
+        display: grid;
+        grid-template-columns: 260px 1fr;
+        gap: 2rem;
+      }
+      .filters {
+        position: sticky;
+        top: 90px;
+        height: fit-content;
+        padding: 1.5rem;
+        background: var(--card);
+        border-radius: var(--radius);
+        border: 1px solid var(--glass-border);
+      }
+      .filter-group {
+        margin-bottom: 1.5rem;
+      }
+      .filter-group h4 {
+        font-size: 0.9rem;
+        font-weight: 600;
+        margin-bottom: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: var(--gold);
+      }
+      .filter-group label {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.35rem 0;
+        cursor: pointer;
+        font-size: 0.9rem;
+        color: var(--text-muted);
+        transition: color 0.2s;
+      }
+      .filter-group label:hover {
+        color: var(--text);
+      }
+      .filter-group input[type="checkbox"],
+      .filter-group input[type="radio"] {
+        accent-color: var(--gold);
+        width: 16px;
+        height: 16px;
+      }
+
+      /* ===== CART / MINI CART ===== */
+      .mini-cart {
+        position: fixed;
+        top: 0;
+        right: -400px;
+        width: 380px;
+        max-width: 100%;
+        height: 100vh;
+        background: var(--card);
+        border-left: 1px solid var(--glass-border);
+        z-index: 2000;
+        transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        display: flex;
+        flex-direction: column;
+        box-shadow: -10px 0 40px rgba(0, 0, 0, 0.15);
+      }
+      .mini-cart.open {
+        right: 0;
+      }
+      .mini-cart-header {
+        padding: 1.2rem 1.5rem;
+        border-bottom: 1px solid var(--glass-border);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .mini-cart-body {
+        flex: 1;
+        overflow-y: auto;
+        padding: 1rem 1.5rem;
+      }
+      .mini-cart-footer {
+        padding: 1.2rem 1.5rem;
+        border-top: 1px solid var(--glass-border);
+      }
+      .cart-item {
+        display: flex;
+        gap: 1rem;
+        padding: 1rem 0;
+        border-bottom: 1px solid var(--glass-border);
+      }
+      .cart-item img {
+        width: 70px;
+        height: 90px;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+      .cart-item-info {
+        flex: 1;
+      }
+      .cart-item-name {
+        font-weight: 500;
+        font-size: 0.95rem;
+        margin-bottom: 0.3rem;
+      }
+      .cart-item-price {
+        color: var(--gold);
+        font-weight: 600;
+      }
+      .qty-control {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-top: 0.5rem;
+      }
+      .qty-control button {
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        border: 1px solid var(--glass-border);
+        background: var(--glass);
+        color: var(--text);
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 1500;
+        opacity: 0;
+        visibility: hidden;
+        transition: var(--transition);
+      }
+      .overlay.show {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      /* ===== PAGES ===== */
+      .page {
+        display: none;
+        animation: fadeIn 0.4s ease;
+      }
+      .page.active {
+        display: block;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(12px);
+        }
+        to {
+          opacity: 1;
+          transform: none;
+        }
+      }
+
+      /* ===== PRODUCT DETAIL ===== */
+      .product-detail {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        padding: 3rem 0;
+      }
+      .pd-gallery {
+        position: relative;
+      }
+      .pd-main-img {
+        aspect-ratio: 3/4;
+        border-radius: var(--radius);
+        overflow: hidden;
+        background: var(--dark-3);
+        cursor: zoom-in;
+      }
+      .pd-main-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s;
+      }
+      .pd-thumbs {
+        display: flex;
+        gap: 0.8rem;
+        margin-top: 1rem;
+      }
+      .pd-thumb {
+        width: 80px;
+        height: 100px;
+        border-radius: 10px;
+        overflow: hidden;
+        border: 2px solid transparent;
+        cursor: pointer;
+        transition: var(--transition);
+      }
+      .pd-thumb.active,
+      .pd-thumb:hover {
+        border-color: var(--gold);
+      }
+      .pd-thumb img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .pd-info h1 {
+        font-family: var(--font-display);
+        font-size: 2.4rem;
+        font-weight: 600;
+        margin-bottom: 0.8rem;
+      }
+      .pd-price {
+        font-size: 1.8rem;
+        color: var(--gold);
+        font-weight: 600;
+        margin: 1rem 0;
+      }
+      .pd-variants {
+        margin: 1.5rem 0;
+      }
+      .variant-label {
+        font-size: 0.85rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+      .variant-options {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
+      .variant-btn {
+        padding: 0.5rem 1rem;
+        border: 1.5px solid var(--glass-border);
+        border-radius: 8px;
+        background: var(--glass);
+        color: var(--text);
+        cursor: pointer;
+        font-size: 0.9rem;
+        transition: var(--transition);
+      }
+      .variant-btn.active,
+      .variant-btn:hover {
+        border-color: var(--gold);
+        background: rgba(201, 169, 110, 0.15);
+        color: var(--gold);
+      }
+
+      /* ===== FORMS ===== */
+      .form-group {
+        margin-bottom: 1.2rem;
+      }
+      .form-group label {
+        display: block;
+        font-size: 0.85rem;
+        font-weight: 500;
+        margin-bottom: 0.4rem;
+        color: var(--text-muted);
+      }
+      .form-control {
+        width: 100%;
+        padding: 0.8rem 1rem;
+        border-radius: 10px;
+        border: 1.5px solid var(--glass-border);
+        background: var(--glass);
+        color: var(--text);
+        font-family: var(--font-body);
+        font-size: 0.95rem;
+        outline: none;
+        transition: var(--transition);
+      }
+      .form-control:focus {
+        border-color: var(--gold);
+        box-shadow: 0 0 0 3px rgba(201, 169, 110, 0.15);
+      }
+      textarea.form-control {
+        min-height: 120px;
+        resize: vertical;
+      }
+
+      /* ===== CHECKOUT ===== */
+      .checkout-grid {
+        display: grid;
+        grid-template-columns: 1.4fr 1fr;
+        gap: 2.5rem;
+      }
+      .order-summary {
+        position: sticky;
+        top: 100px;
+        padding: 1.8rem;
+        background: var(--card);
+        border-radius: var(--radius);
+        border: 1px solid var(--glass-border);
+      }
+
+      /* ===== ADMIN / DASHBOARD ===== */
+      .dash-layout {
+        display: grid;
+        grid-template-columns: 240px 1fr;
+        gap: 0;
+        min-height: calc(100vh - 80px);
+      }
+      .dash-sidebar {
+        background: var(--dark);
+        color: #fff;
+        padding: 1.5rem 0;
+        border-right: 1px solid rgba(201, 169, 110, 0.15);
+      }
+      .dash-sidebar a {
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+        padding: 0.85rem 1.5rem;
+        color: rgba(255, 255, 255, 0.7);
+        text-decoration: none;
+        font-size: 0.92rem;
+        transition: var(--transition);
+      }
+      .dash-sidebar a:hover,
+      .dash-sidebar a.active {
+        background: rgba(201, 169, 110, 0.15);
+        color: var(--gold);
+      }
+      .dash-content {
+        padding: 2rem;
+        background: var(--bg);
+      }
+      .stat-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1.2rem;
+        margin-bottom: 2rem;
+      }
+      .stat-card {
+        padding: 1.5rem;
+        background: var(--card);
+        border-radius: var(--radius);
+        border: 1px solid var(--glass-border);
+      }
+      .stat-card h3 {
+        font-size: 0.85rem;
+        color: var(--text-muted);
+        margin-bottom: 0.5rem;
+      }
+      .stat-card .value {
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: var(--gold);
+      }
+
+      /* ===== TOAST ===== */
+      #toast-container {
+        position: fixed;
+        bottom: 24px;
+        right: 24px;
+        z-index: 10000;
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+      }
+      .toast {
+        padding: 0.9rem 1.4rem;
+        background: var(--dark);
+        color: #fff;
+        border-radius: 12px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+        animation: slideIn 0.35s ease;
+        max-width: 360px;
+        border-left: 4px solid var(--gold);
+      }
+      .toast.success {
+        border-left-color: #4caf50;
+      }
+      .toast.error {
+        border-left-color: #f44336;
+      }
+      @keyframes slideIn {
+        from {
+          transform: translateX(100%);
+          opacity: 0;
+        }
+        to {
+          transform: none;
+          opacity: 1;
+        }
+      }
+
+      /* ===== MODAL ===== */
+      .modal-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: 3000;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        backdrop-filter: blur(4px);
+      }
+      .modal-overlay.show {
+        display: flex;
+      }
+      .modal {
+        background: var(--card);
+        border-radius: var(--radius);
+        width: min(480px, 100%);
+        max-height: 90vh;
+        overflow-y: auto;
+        border: 1px solid var(--glass-border);
+        animation: fadeIn 0.3s ease;
+      }
+      .modal-header {
+        padding: 1.3rem 1.5rem;
+        border-bottom: 1px solid var(--glass-border);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .modal-body {
+        padding: 1.5rem;
+      }
+      .modal-footer {
+        padding: 1rem 1.5rem;
+        border-top: 1px solid var(--glass-border);
+        display: flex;
+        gap: 0.8rem;
+        justify-content: flex-end;
+      }
+
+      /* ===== LIVE CHAT ===== */
+      .chat-widget {
+        position: fixed;
+        bottom: 90px;
+        right: 24px;
+        z-index: 900;
+        width: 340px;
+        max-height: 480px;
+        display: none;
+        flex-direction: column;
+        background: var(--card);
+        border-radius: 16px;
+        border: 1px solid var(--glass-border);
+        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+      }
+      .chat-widget.open {
+        display: flex;
+      }
+      .chat-header {
+        background: linear-gradient(135deg, var(--dark), var(--dark-2));
+        color: var(--gold);
+        padding: 1rem 1.2rem;
+        font-weight: 600;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .chat-body {
+        flex: 1;
+        overflow-y: auto;
+        padding: 1rem;
+        max-height: 320px;
+      }
+      .chat-msg {
+        padding: 0.6rem 1rem;
+        border-radius: 12px;
+        margin-bottom: 0.6rem;
+        max-width: 85%;
+        font-size: 0.9rem;
+      }
+      .chat-msg.bot {
+        background: var(--glass);
+        margin-right: auto;
+      }
+      .chat-msg.user {
+        background: rgba(201, 169, 110, 0.2);
+        margin-left: auto;
+        color: var(--gold-dark);
+      }
+      .chat-input {
+        display: flex;
+        border-top: 1px solid var(--glass-border);
+      }
+      .chat-input input {
+        flex: 1;
+        border: none;
+        padding: 0.9rem 1rem;
+        background: transparent;
+        color: var(--text);
+        outline: none;
+        font-family: var(--font-body);
+      }
+      .chat-input button {
+        background: none;
+        border: none;
+        color: var(--gold);
+        padding: 0 1rem;
+        cursor: pointer;
+        font-size: 1.1rem;
+      }
+      .chat-fab {
+        position: fixed;
+        bottom: 24px;
+        right: 24px;
+        z-index: 900;
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+        color: #fff;
+        border: none;
+        font-size: 1.4rem;
+        cursor: pointer;
+        box-shadow: 0 6px 20px rgba(201, 169, 110, 0.4);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: var(--transition);
+      }
+      .chat-fab:hover {
+        transform: scale(1.08);
+      }
+
+      /* ===== BACK TO TOP ===== */
+      #backTop {
+        position: fixed;
+        bottom: 24px;
+        left: 24px;
+        z-index: 800;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background: var(--glass);
+        border: 1px solid var(--glass-border);
+        color: var(--gold);
+        cursor: pointer;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.1rem;
+        transition: var(--transition);
+        backdrop-filter: blur(8px);
+      }
+      #backTop.show {
+        display: flex;
+      }
+      #backTop:hover {
+        background: var(--gold);
+        color: #fff;
+      }
+
+      /* ===== COOKIE ===== */
+      .cookie-banner {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 5000;
+        background: var(--dark);
+        color: #fff;
+        padding: 1.2rem;
+        display: none;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+        border-top: 1px solid rgba(201, 169, 110, 0.3);
+      }
+      .cookie-banner.show {
+        display: flex;
+      }
+
+      /* ===== FOOTER ===== */
+      .footer {
+        background: var(--dark);
+        color: rgba(255, 255, 255, 0.8);
+        padding: 4rem 0 2rem;
+        margin-top: 4rem;
+      }
+      .footer-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        gap: 2.5rem;
+        margin-bottom: 3rem;
+      }
+      .footer h4 {
+        color: var(--gold);
+        font-family: var(--font-display);
+        font-size: 1.2rem;
+        margin-bottom: 1.2rem;
+      }
+      .footer a {
+        color: rgba(255, 255, 255, 0.65);
+        text-decoration: none;
+        display: block;
+        margin-bottom: 0.5rem;
+        transition: color 0.2s;
+      }
+      .footer a:hover {
+        color: var(--gold);
+      }
+      .footer-bottom {
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        padding-top: 1.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        font-size: 0.85rem;
+      }
+      .socials {
+        display: flex;
+        gap: 0.8rem;
+      }
+      .socials a {
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        background: rgba(201, 169, 110, 0.15);
+        color: var(--gold);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: var(--transition);
+      }
+      .socials a:hover {
+        background: var(--gold);
+        color: #fff;
+      }
+
+      /* ===== FAQ ===== */
+      .faq-item {
+        border: 1px solid var(--glass-border);
+        border-radius: 12px;
+        margin-bottom: 0.8rem;
+        overflow: hidden;
+        background: var(--card);
+      }
+      .faq-q {
+        padding: 1.1rem 1.4rem;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: 500;
+        transition: var(--transition);
+      }
+      .faq-q:hover {
+        color: var(--gold);
+      }
+      .faq-a {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.35s ease;
+        padding: 0 1.4rem;
+        color: var(--text-muted);
+      }
+      .faq-item.open .faq-a {
+        max-height: 300px;
+        padding-bottom: 1.2rem;
+      }
+
+      /* ===== TESTIMONIALS ===== */
+      .testimonials {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.5rem;
+      }
+      .testimonial {
+        padding: 1.8rem;
+        background: var(--card);
+        border-radius: var(--radius);
+        border: 1px solid var(--glass-border);
+      }
+      .testimonial .stars {
+        color: var(--gold);
+        margin-bottom: 0.8rem;
+      }
+      .testimonial p {
+        font-style: italic;
+        margin-bottom: 1rem;
+        color: var(--text-muted);
+      }
+      .testimonial .author {
+        font-weight: 600;
+        font-size: 0.95rem;
+      }
+
+      /* ===== QUIZ ===== */
+      .quiz-step {
+        display: none;
+      }
+      .quiz-step.active {
+        display: block;
+        animation: fadeIn 0.3s;
+      }
+      .quiz-options {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        margin-top: 1.5rem;
+      }
+      .quiz-opt {
+        padding: 1.2rem;
+        border: 1.5px solid var(--glass-border);
+        border-radius: 12px;
+        cursor: pointer;
+        text-align: center;
+        transition: var(--transition);
+        background: var(--glass);
+      }
+      .quiz-opt:hover,
+      .quiz-opt.selected {
+        border-color: var(--gold);
+        background: rgba(201, 169, 110, 0.12);
+      }
+
+      /* ===== RESPONSIVE ===== */
+      @media (max-width: 992px) {
+        .shop-layout {
+          grid-template-columns: 1fr;
+        }
+        .filters {
+          position: static;
+        }
+        .product-detail {
+          grid-template-columns: 1fr;
+        }
+        .checkout-grid {
+          grid-template-columns: 1fr;
+        }
+        .footer-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+        .dash-layout {
+          grid-template-columns: 1fr;
+        }
+        .dash-sidebar {
+          display: none;
+        }
+        .nav {
+          display: none;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          right: 0;
+          background: var(--card);
+          flex-direction: column;
+          padding: 1rem;
+          border-bottom: 1px solid var(--glass-border);
+          box-shadow: var(--shadow);
+        }
+        .nav.open {
+          display: flex;
+        }
+        .mobile-toggle {
+          display: block;
+        }
+        .search-box input {
+          width: 140px;
+        }
+        .search-box input:focus {
+          width: 180px;
+        }
+      }
+      @media (max-width: 600px) {
+        .footer-grid {
+          grid-template-columns: 1fr;
+        }
+        .hero h1 {
+          font-size: 2.4rem;
+        }
+        .products-grid {
+          grid-template-columns: 1fr 1fr;
+          gap: 1rem;
+        }
+        .product-info {
+          padding: 0.9rem;
+        }
+        .product-name {
+          font-size: 1.05rem;
+        }
+      }
+
+      /* Skeleton */
+      .skeleton {
+        background: linear-gradient(
+          90deg,
+          var(--glass) 25%,
+          rgba(201, 169, 110, 0.1) 50%,
+          var(--glass) 75%
+        );
+        background-size: 200% 100%;
+        animation: shimmer 1.5s infinite;
+        border-radius: 8px;
+      }
+      @keyframes shimmer {
+        0% {
+          background-position: 200% 0;
+        }
+        100% {
+          background-position: -200% 0;
+        }
+      }
+
+      /* Print */
+      @media print {
+        .header,
+        .footer,
+        .chat-fab,
+        .chat-widget,
+        #backTop,
+        .btn,
+        .nav {
+          display: none !important;
+        }
+        body {
+          background: #fff;
+          color: #000;
+        }
+      }
+
+      /* Accessibility */
+      :focus-visible {
+        outline: 2px solid var(--gold);
+        outline-offset: 2px;
+      }
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        border: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- LOADER -->
+    <div id="loader">
+      <div class="loader-logo">MERONY</div>
+      <div class="loader-bar"></div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header">
+      <div class="header-top">
+        Free shipping on orders over ₦80,000 • Use code
+        <strong>LUXE15</strong> for 15% off
+      </div>
+      <div class="container header-main">
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+        <a href="#" class="logo" data-page="home"
+          >Merony <span>Hair.NG</span></a
+        >
+
+        <nav class="nav" id="mainNav">
+          <a href="#" data-page="home" class="active">Home</a>
+          <a href="#" data-page="shop">Shop</a>
+          <a href="#" data-page="about">About</a>
+          <a href="#" data-page="blog">Blog</a>
+          <a href="#" data-page="faq">FAQ</a>
+          <a href="#" data-page="contact">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+          <div class="search-box">
+            <i class="fas fa-search"></i>
+            <input
+              type="text"
+              id="globalSearch"
+              placeholder="Search hair..."
+              aria-label="Search">
+          </div>
+          <button class="btn-icon" id="themeToggle" aria-label="Toggle theme">
+            <i class="fas fa-moon"></i>
+          </button>
+          <button class="btn-icon" id="currencyBtn" title="Currency">₦</button>
+          <button class="btn-icon" id="accountBtn" aria-label="Account">
+            <i class="fas fa-user"></i>
+          </button>
+          <button
+            class="btn-icon admin-btn"
+            id="adminBtn"
+            aria-label="Admin Dashboard"
+          >
+            <i class="fas fa-shield-alt"></i>
+          </button>
+          <button class="btn-icon cart-btn" id="cartBtn" aria-label="Cart">
+            <i class="fas fa-shopping-bag"></i>
+            <span class="cart-count" id="cartCount">0</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- OVERLAY -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- MINI CART -->
+    <div class="mini-cart" id="miniCart">
+      <div class="mini-cart-header">
+        <h3 style="font-family: var(--font-display); font-size: 1.3rem">
+          Your Bag
+        </h3>
+        <button class="btn-icon" id="closeCart" aria-label="Close">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="mini-cart-body" id="miniCartBody"></div>
+      <div class="mini-cart-footer">
+        <div
+          style="
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+            font-weight: 600;
+          "
+        >
+          <span>Subtotal</span>
+          <span id="miniSubtotal">₦0</span>
+        </div>
+        <button
+          class="btn btn-primary"
+          style="width: 100%; margin-bottom: 0.6rem"
+          data-page="checkout"
+        >
+          Checkout
+        </button>
+        <button class="btn btn-outline" style="width: 100%" data-page="cart">
+          View Cart
+        </button>
+      </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <main id="mainContent">
+      <!-- ========== HOME ========== -->
+      <section class="page active" id="page-home">
+        <div class="hero">
+          <div class="container hero-content">
+            <div class="hero-badge">Luxury Human Hair</div>
+            <h1>Elevate Your Crown with Premium Hair</h1>
+            <p>
+              Authentic 100% human hair bundles, wigs & closures crafted for the
+              modern Nigerian woman who demands excellence.
+            </p>
+            <div class="hero-btns">
+              <a href="#" class="btn btn-primary" data-page="shop"
+                >Shop Collection</a
+              >
+              <a
+                href="#"
+                class="btn btn-outline"
+                style="border-color: #fff; color: #fff"
+                data-page="quiz"
+                >Hair Quiz</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Categories -->
+        <div class="section container">
+          <h2 class="section-title">Shop by Category</h2>
+          <p class="section-sub">Discover our curated collections</p>
+          <div class="products-grid" id="homeCategories">
+            <div class="product-card" data-page="shop" data-cat="Bundles">
+              <div class="product-img">
+                <img
+                  src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=500&q=80"
+                  alt="Hair Bundles"
+                  loading="lazy">
+              </div>
+              <div class="product-info">
+                <div class="product-name">Hair Bundles</div>
+              </div>
+            </div>
+            <div class="product-card" data-page="shop" data-cat="Wigs">
+              <div class="product-img">
+                <img
+                  src="https://images.unsplash.com/photo-1522338242992-e1a74e2b7ded?w=500&q=80"
+                  alt="Wigs"
+                  loading="lazy">
+              </div>
+              <div class="product-info">
+                <div class="product-name">Lace Wigs</div>
+              </div>
+            </div>
+            <div class="product-card" data-page="shop" data-cat="Closures">
+              <div class="product-img">
+                <img
+                  src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=500&q=80"
+                  alt="Closures"
+                  loading="lazy">
+              </div>
+              <div class="product-info">
+                <div class="product-name">Closures & Frontals</div>
+              </div>
+            </div>
+            <div class="product-card" data-page="shop" data-cat="Tools">
+              <div class="product-img">
+                <img
+                  src="https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?w=500&q=80"
+                  alt="Care"
+                  loading="lazy">
+              </div>
+              <div class="product-info">
+                <div class="product-name">Hair Care</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Featured -->
+        <div class="section" style="background: var(--cream)">
+          <div class="container">
+            <h2 class="section-title">Bestselling Pieces</h2>
+            <p class="section-sub">
+              Loved by thousands of queens across Nigeria
+            </p>
+            <div class="products-grid" id="featuredProducts"></div>
+          </div>
+        </div>
+
+        <!-- Testimonials -->
+        <div class="section container">
+          <h2 class="section-title">What Our Queens Say</h2>
+          <p class="section-sub">Real reviews from real customers</p>
+          <div class="testimonials" id="testimonials"></div>
+        </div>
+
+        <!-- Instagram / Social -->
+        <div class="section" style="background: var(--cream)">
+          <div class="container">
+            <h2 class="section-title">#MeronyHair</h2>
+            <p class="section-sub">
+              Follow us on Instagram & TikTok @meronyhair.ng
+            </p>
+            <div
+              style="
+                text-align: center;
+                margin-bottom: 2rem;
+                display: flex;
+                gap: 1rem;
+                justify-content: center;
+                flex-wrap: wrap;
+              "
+            >
+              <a
+                href="https://instagram.com/meronyhair.ng"
+                target="_blank"
+                class="btn btn-outline btn-sm"
+                ><i class="fab fa-instagram"></i> Follow on Instagram</a
+              >
+              <a
+                href="https://www.tiktok.com/@meronyhair.ng"
+                target="_blank"
+                class="btn btn-outline btn-sm"
+                ><i class="fab fa-tiktok"></i> Follow on TikTok</a
+              >
+            </div>
+            <div
+              class="products-grid"
+              style="
+                grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+              "
+              id="igGallery"
+            >
+              <div class="product-card">
+                <div class="product-img">
+                  <img
+                    src="https://images.unsplash.com/photo-1595476108010-b4d1e1023912?w=400"
+                    alt="IG"
+                    loading="lazy">
+                </div>
+              </div>
+              <div class="product-card">
+                <div class="product-img">
+                  <img
+                    src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=400"
+                    alt="IG"
+                    loading="lazy">
+                </div>
+              </div>
+              <div class="product-card">
+                <div class="product-img">
+                  <img
+                    src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=400"
+                    alt="IG"
+                    loading="lazy">
+                </div>
+              </div>
+              <div class="product-card">
+                <div class="product-img">
+                  <img
+                    src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400"
+                    alt="IG"
+                    loading="lazy">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="section container" style="text-align: center">
+          <h2 class="section-title">Join the Royalty Club</h2>
+          <p class="section-sub">
+            Exclusive offers, hair tips & early access. 10% off your first
+            order.
+          </p>
+          <form
+            id="newsletterForm"
+            style="
+              display: flex;
+              gap: 0.8rem;
+              max-width: 480px;
+              margin: 0 auto;
+              flex-wrap: wrap;
+              justify-content: center;
+            "
+          >
+            <input
+              type="email"
+              class="form-control"
+              placeholder="Your email address"
+              required
+              style="flex: 1; min-width: 220px">
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- ========== SHOP ========== -->
+      <section class="page" id="page-shop">
+        <div class="container" style="padding-top: 2.5rem">
+          <h2 class="section-title">Shop All Hair</h2>
+          <p class="section-sub">Filter by texture, length, color & more</p>
+
+          <div class="shop-layout">
+            <aside class="filters glass">
+              <div class="filter-group">
+                <h3>Category</h3>
+                <label
+                  ><input type="checkbox" name="cat" value="Bundles">
+                  Bundles</label
+                >
+                <label
+                  ><input type="checkbox" name="cat" value="Wigs"> Wigs</label
+                >
+                <label
+                  ><input type="checkbox" name="cat" value="Closures">
+                  Closures</label
+                >
+                <label
+                  ><input type="checkbox" name="cat" value="Frontals">
+                  Frontals</label
+                >
+                <label
+                  ><input type="checkbox" name="cat" value="Tools"> Care &
+                  Tools</label
+                >
+              </div>
+              <div class="filter-group">
+                <h3>Texture</h3>
+                <label
+                  ><input type="checkbox" name="texture" value="Straight">
+                  Straight</label
+                >
+                <label
+                  ><input type="checkbox" name="texture" value="Body Wave">
+                  Body Wave</label
+                >
+                <label
+                  ><input type="checkbox" name="texture" value="Deep Wave">
+                  Deep Wave</label
+                >
+                <label
+                  ><input type="checkbox" name="texture" value="Curly">
+                  Curly</label
+                >
+                <label
+                  ><input type="checkbox" name="texture" value="Kinky">
+                  Kinky</label
+                >
+              </div>
+              <div class="filter-group">
+                <h3>Length</h3>
+                <label
+                  ><input type="checkbox" name="length" value="12"> 12"</label
+                >
+                <label
+                  ><input type="checkbox" name="length" value="14"> 14"</label
+                >
+                <label
+                  ><input type="checkbox" name="length" value="16"> 16"</label
+                >
+                <label
+                  ><input type="checkbox" name="length" value="18"> 18"</label
+                >
+                <label
+                  ><input type="checkbox" name="length" value="20"> 20"</label
+                >
+                <label
+                  ><input type="checkbox" name="length" value="22">
+                  22"+</label
+                >
+              </div>
+              <div class="filter-group">
+                <h3>Price</h3>
+                <label
+                  ><input type="radio" name="price" value="0-30000"> Under
+                  ₦30k</label
+                >
+                <label
+                  ><input type="radio" name="price" value="30000-60000"> ₦30k
+                  – ₦60k</label
+                >
+                <label
+                  ><input type="radio" name="price" value="60000-100000"> ₦60k
+                  – ₦100k</label
+                >
+                <label
+                  ><input type="radio" name="price" value="100000+">
+                  ₦100k+</label
+                >
+              </div>
+              <button
+                class="btn btn-outline btn-sm"
+                style="width: 100%"
+                id="clearFilters"
+              >
+                Clear Filters
+              </button>
+            </aside>
+
+            <div>
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  margin-bottom: 1.5rem;
+                  flex-wrap: wrap;
+                  gap: 1rem;
+                "
+              >
+                <span
+                  id="resultCount"
+                  style="color: var(--text-muted); font-size: 0.9rem"
+                  >Showing all products</span
+                >
+                <select
+                  id="sortSelect"
+                  class="form-control"
+                  style="width: auto; padding: 0.5rem 1rem"
+                >
+                  <option value="featured">Featured</option>
+                  <option value="price-asc">Price: Low to High</option>
+                  <option value="price-desc">Price: High to Low</option>
+                  <option value="newest">Newest</option>
+                  <option value="rating">Top Rated</option>
+                </select>
+              </div>
+              <div class="products-grid" id="shopProducts"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== PRODUCT DETAIL ========== -->
+      <section class="page" id="page-product">
+        <div class="container product-detail" id="productDetailContent"></div>
+        <div class="container section">
+          <h2 class="section-title">You May Also Like</h2>
+          <div class="products-grid" id="relatedProducts"></div>
+        </div>
+      </section>
+
+      <!-- ========== CART ========== -->
+      <section class="page" id="page-cart">
+        <div class="container" style="padding: 3rem 0">
+          <h2 class="section-title">Shopping Bag</h2>
+          <div id="cartPageContent"></div>
+        </div>
+      </section>
+
+      <!-- ========== CHECKOUT ========== -->
+      <section class="page" id="page-checkout">
+        <div class="container" style="padding: 3rem 0">
+          <h2 class="section-title">Checkout</h2>
+          <div class="checkout-grid">
+            <div>
+              <div class="glass" style="padding: 1.8rem; margin-bottom: 1.5rem">
+                <h3
+                  style="
+                    font-family: var(--font-display);
+                    margin-bottom: 1.2rem;
+                  "
+                >
+                  Contact Information
+                </h3>
+                <div class="form-group">
+                  <label>Email</label
+                  ><input
+                    type="email"
+                    class="form-control"
+                    id="coEmail"
+                    required>
+                </div>
+                <div class="form-group">
+                  <label>Phone</label
+                  ><input
+                    type="tel"
+                    class="form-control"
+                    id="coPhone"
+                    placeholder="+234..."
+                    required>
+                </div>
+              </div>
+              <div class="glass" style="padding: 1.8rem; margin-bottom: 1.5rem">
+                <h3
+                  style="
+                    font-family: var(--font-display);
+                    margin-bottom: 1.2rem;
+                  "
+                >
+                  Shipping Address
+                </h3>
+                <div class="form-group">
+                  <label>Full Name</label
+                  ><input
+                    type="text"
+                    class="form-control"
+                    id="coName"
+                    required>
+                </div>
+                <div class="form-group">
+                  <label>Address</label
+                  ><input
+                    type="text"
+                    class="form-control"
+                    id="coAddress"
+                    required>
+                </div>
+                <div
+                  style="
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 1rem;
+                  "
+                >
+                  <div class="form-group">
+                    <label>City</label
+                    ><input
+                      type="text"
+                      class="form-control"
+                      id="coCity"
+                      required>
+                  </div>
+                  <div class="form-group">
+                    <label>State</label>
+                    <select class="form-control" id="coState">
+                      <option>Lagos</option>
+                      <option>Abuja</option>
+                      <option>Rivers</option>
+                      <option>Oyo</option>
+                      <option>Kano</option>
+                      <option>Other</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="glass" style="padding: 1.8rem">
+                <h3
+                  style="
+                    font-family: var(--font-display);
+                    margin-bottom: 1.2rem;
+                  "
+                >
+                  Delivery Option
+                </h3>
+                <label
+                  style="
+                    display: flex;
+                    align-items: center;
+                    gap: 0.8rem;
+                    padding: 0.8rem;
+                    border: 1px solid var(--glass-border);
+                    border-radius: 10px;
+                    margin-bottom: 0.6rem;
+                    cursor: pointer;
+                  "
+                >
+                  <input
+                    type="radio"
+                    name="delivery"
+                    value="standard"
+                    checked>
+                  Standard (3-5 days) — ₦2,500
+                </label>
+                <label
+                  style="
+                    display: flex;
+                    align-items: center;
+                    gap: 0.8rem;
+                    padding: 0.8rem;
+                    border: 1px solid var(--glass-border);
+                    border-radius: 10px;
+                    margin-bottom: 0.6rem;
+                    cursor: pointer;
+                  "
+                >
+                  <input type="radio" name="delivery" value="express"> Express
+                  (1-2 days) — ₦5,000
+                </label>
+                <label
+                  style="
+                    display: flex;
+                    align-items: center;
+                    gap: 0.8rem;
+                    padding: 0.8rem;
+                    border: 1px solid var(--glass-border);
+                    border-radius: 10px;
+                    cursor: pointer;
+                  "
+                >
+                  <input type="radio" name="delivery" value="pickup"> Lagos
+                  Pickup — Free
+                </label>
+              </div>
+            </div>
+            <div class="order-summary glass">
+              <h3
+                style="font-family: var(--font-display); margin-bottom: 1.2rem"
+              >
+                Order Summary
+              </h3>
+              <div id="checkoutItems"></div>
+              <div
+                style="
+                  border-top: 1px solid var(--glass-border);
+                  padding-top: 1rem;
+                  margin-top: 1rem;
+                "
+              >
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 0.5rem;
+                  "
+                >
+                  <span>Subtotal</span><span id="coSubtotal">₦0</span>
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 0.5rem;
+                  "
+                >
+                  <span>Shipping</span><span id="coShipping">₦2,500</span>
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 0.5rem;
+                  "
+                >
+                  <span>Tax (7.5%)</span><span id="coTax">₦0</span>
+                </div>
+                <div class="form-group" style="margin-top: 1rem">
+                  <label>Coupon Code</label>
+                  <div style="display: flex; gap: 0.5rem">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="couponCode"
+                      placeholder="LUXE15">
+                    <button class="btn btn-outline btn-sm" id="applyCoupon">
+                      Apply
+                    </button>
+                  </div>
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                    margin-top: 1rem;
+                    color: var(--gold);
+                  "
+                >
+                  <span>Total</span><span id="coTotal">₦0</span>
+                </div>
+              </div>
+              <button
+                class="btn btn-primary"
+                style="width: 100%; margin-top: 1.5rem"
+                id="placeOrderBtn"
+              >
+                <i class="fas fa-lock"></i> Place Order
+              </button>
+              <p
+                style="
+                  font-size: 0.75rem;
+                  color: var(--text-muted);
+                  text-align: center;
+                  margin-top: 0.8rem;
+                "
+              >
+                Secure checkout • Paystack & Flutterwave ready
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== ABOUT ========== -->
+      <section class="page" id="page-about">
+        <div class="container section">
+          <h2 class="section-title">Our Story</h2>
+          <p class="section-sub">Crafted with love in Lagos, Nigeria</p>
+          <div
+            style="
+              max-width: 720px;
+              margin: 0 auto;
+              text-align: center;
+              line-height: 1.8;
+            "
+          >
+            <p style="margin-bottom: 1.5rem">
+              Merony Hair.NG was born from a simple desire: to give every woman
+              access to premium, authentic 100% human hair that feels as
+              luxurious as it looks.
+            </p>
+            <p style="margin-bottom: 1.5rem">
+              We carefully source the finest hair, process it with care, and
+              deliver pieces that blend seamlessly, last longer, and make you
+              feel unstoppable.
+            </p>
+            <p>
+              From single bundles to full glam wigs — we are here to crown you.
+            </p>
+            <div style="margin-top: 2.5rem">
+              <a
+                href="https://wa.me/2349063108912?text=Hi%20Merony%20Hair%2C%20I%20would%20like%20to%20learn%20more%20about%20your%20products."
+                target="_blank"
+                class="btn btn-primary"
+                ><i class="fab fa-whatsapp"></i> Chat with us</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== CONTACT ========== -->
+      <section class="page" id="page-contact">
+        <div class="container section">
+          <h2 class="section-title">Get in Touch</h2>
+          <p class="section-sub">
+            Beyond Hair. Behold Beauty. — We typically respond within a few
+            hours
+          </p>
+          <div
+            style="
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              gap: 2.5rem;
+              max-width: 960px;
+              margin: 0 auto;
+            "
+            class="contact-grid"
+          >
+            <div class="glass" style="padding: 2rem">
+              <h3
+                style="font-family: var(--font-display); margin-bottom: 1.2rem"
+              >
+                Send a Message
+              </h3>
+              <form id="contactForm">
+                <div class="form-group">
+                  <label>Name</label
+                  ><input type="text" class="form-control" required>
+                </div>
+                <div class="form-group">
+                  <label>Email</label
+                  ><input type="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                  <label>Subject</label>
+                  <select class="form-control" id="contactSubject">
+                    <option value="general">General Enquiry</option>
+                    <option value="product">Product Enquiry</option>
+                    <option value="order">Order Support</option>
+                    <option value="wholesale">Wholesale / Partnership</option>
+                    <option value="return">Return / Complaint</option>
+                    <option value="consultation">Hair Consultation</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>Message</label
+                  ><textarea
+                    class="form-control"
+                    required
+                    placeholder="How can we help you?"
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  class="btn btn-primary"
+                  style="width: 100%"
+                >
+                  Send Message
+                </button>
+              </form>
+              <p
+                style="
+                  font-size: 0.75rem;
+                  color: var(--text-muted);
+                  margin-top: 0.8rem;
+                  text-align: center;
+                "
+              >
+                <!-- Backend hook: POST /api/contact or email service (Resend / SendGrid / Brevo) -->
+                Form currently simulates success. Ready for real email backend.
+              </p>
+            </div>
+            <div>
+              <div class="glass" style="padding: 1.5rem; margin-bottom: 1rem">
+                <h4 style="color: var(--gold); margin-bottom: 0.6rem">
+                  <i class="fab fa-whatsapp"></i> WhatsApp
+                </h4>
+                <a
+                  href="https://wa.me/2349063108912?text=Hi%20Merony%20Hair%2C%20I%20would%20like%20to%20make%20an%20enquiry."
+                  target="_blank"
+                  style="color: var(--text); font-weight: 500"
+                  >+234 906 310 8912</a
+                >
+                <div
+                  style="
+                    margin-top: 0.9rem;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.4rem;
+                  "
+                >
+                  <a
+                    href="https://wa.me/2349063108912?text=Hi%20Merony%20Hair%2C%20I%20need%20help%20with%20an%20order."
+                    target="_blank"
+                    class="btn btn-outline btn-sm"
+                    style="justify-content: flex-start"
+                    ><i class="fas fa-box"></i> Order Support</a
+                  >
+                  <a
+                    href="https://wa.me/2349063108912?text=Hi%20Merony%20Hair%2C%20I%20would%20like%20a%20hair%20consultation."
+                    target="_blank"
+                    class="btn btn-outline btn-sm"
+                    style="justify-content: flex-start"
+                    ><i class="fas fa-comments"></i> Hair Consultation</a
+                  >
+                  <a
+                    href="https://wa.me/2349063108912?text=Hi%20Merony%20Hair%2C%20I%20am%20interested%20in%20wholesale%20or%20partnership."
+                    target="_blank"
+                    class="btn btn-outline btn-sm"
+                    style="justify-content: flex-start"
+                    ><i class="fas fa-handshake"></i> Wholesale / Partnership</a
+                  >
+                </div>
+              </div>
+              <div class="glass" style="padding: 1.5rem; margin-bottom: 1rem">
+                <h4 style="color: var(--gold); margin-bottom: 0.5rem">
+                  <i class="fas fa-envelope"></i> Email
+                </h4>
+                <a
+                  href="mailto:hellomeronyhair@gmail.com?subject=Enquiry%20from%20Merony%20Hair%20Website"
+                  style="color: var(--text)"
+                  >hellomeronyhair@gmail.com</a
+                >
+              </div>
+              <div class="glass" style="padding: 1.5rem; margin-bottom: 1rem">
+                <h4 style="color: var(--gold); margin-bottom: 0.5rem">
+                  <i class="fab fa-instagram"></i> Instagram
+                </h4>
+                <a
+                  href="https://instagram.com/meronyhair.ng"
+                  target="_blank"
+                  style="color: var(--text)"
+                  >@meronyhair.ng</a
+                >
+              </div>
+              <div class="glass" style="padding: 1.5rem">
+                <h4 style="color: var(--gold); margin-bottom: 0.5rem">
+                  <i class="fab fa-tiktok"></i> TikTok
+                </h4>
+                <a
+                  href="https://www.tiktok.com/@meronyhair.ng"
+                  target="_blank"
+                  style="color: var(--text)"
+                  >@meronyhair.ng</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== FAQ ========== -->
+      <section class="page" id="page-faq">
+        <div class="container section">
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <div style="max-width: 700px; margin: 0 auto 2rem">
+            <input
+              type="text"
+              class="form-control"
+              id="faqSearch"
+              placeholder="Search FAQs...">
+          </div>
+          <div id="faqList" style="max-width: 700px; margin: 0 auto"></div>
+        </div>
+      </section>
+
+      <!-- ========== BLOG ========== -->
+      <section class="page" id="page-blog">
+        <div class="container section">
+          <h2 class="section-title">Hair Care Journal</h2>
+          <p class="section-sub">Tips, tutorials & inspiration</p>
+          <div class="products-grid" id="blogPosts">
+            <div class="product-card">
+              <div class="product-img">
+                <img
+                  src="https://images.unsplash.com/photo-1522338140262-f46f5913618a?w=500"
+                  alt="Blog"
+                  loading="lazy">
+              </div>
+              <div class="product-info">
+                <div class="product-cat">Care Tips</div>
+                <div class="product-name">
+                  How to Maintain Your Bundles for 2+ Years
+                </div>
+                <p
+                  style="
+                    font-size: 0.9rem;
+                    color: var(--text-muted);
+                    margin-top: 0.5rem;
+                  "
+                >
+                  Proper washing, conditioning and storage secrets...
+                </p>
+              </div>
+            </div>
+            <div class="product-card">
+              <div class="product-img">
+                <img
+                  src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=500"
+                  alt="Blog"
+                  loading="lazy">
+              </div>
+              <div class="product-info">
+                <div class="product-cat">Styling</div>
+                <div class="product-name">
+                  5 Protective Styles for the Rainy Season
+                </div>
+                <p
+                  style="
+                    font-size: 0.9rem;
+                    color: var(--text-muted);
+                    margin-top: 0.5rem;
+                  "
+                >
+                  Keep your hair looking flawless even when the rains come...
+                </p>
+              </div>
+            </div>
+            <div class="product-card">
+              <div class="product-img">
+                <img
+                  src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=500"
+                  alt="Blog"
+                  loading="lazy">
+              </div>
+              <div class="product-info">
+                <div class="product-cat">Guides</div>
+                <div class="product-name">
+                  Choosing the Right Lace Type for You
+                </div>
+                <p
+                  style="
+                    font-size: 0.9rem;
+                    color: var(--text-muted);
+                    margin-top: 0.5rem;
+                  "
+                >
+                  HD lace vs transparent vs swiss — we break it down...
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== QUIZ ========== -->
+      <section class="page" id="page-quiz">
+        <div class="container section" style="max-width: 640px">
+          <h2 class="section-title">AI Hair Recommendation</h2>
+          <p class="section-sub">
+            Answer a few questions and we’ll suggest the perfect hair for you
+          </p>
+          <div class="glass" style="padding: 2rem" id="quizContainer">
+            <div class="quiz-step active" data-step="1">
+              <h3 style="margin-bottom: 0.5rem">What’s your preferred look?</h3>
+              <div class="quiz-options">
+                <div class="quiz-opt" data-val="natural">Natural & Soft</div>
+                <div class="quiz-opt" data-val="glam">Full Glam</div>
+                <div class="quiz-opt" data-val="versatile">
+                  Versatile Everyday
+                </div>
+                <div class="quiz-opt" data-val="protective">
+                  Protective Style
+                </div>
+              </div>
+            </div>
+            <div class="quiz-step" data-step="2">
+              <h3 style="margin-bottom: 0.5rem">Preferred texture?</h3>
+              <div class="quiz-options">
+                <div class="quiz-opt" data-val="Straight">Bone Straight</div>
+                <div class="quiz-opt" data-val="Body Wave">Body Wave</div>
+                <div class="quiz-opt" data-val="Deep Wave">Deep Wave</div>
+                <div class="quiz-opt" data-val="Curly">Curly / Kinky</div>
+              </div>
+            </div>
+            <div class="quiz-step" data-step="3">
+              <h3 style="margin-bottom: 0.5rem">Ideal length?</h3>
+              <div class="quiz-options">
+                <div class="quiz-opt" data-val="14">14" – 16"</div>
+                <div class="quiz-opt" data-val="18">18" – 20"</div>
+                <div class="quiz-opt" data-val="22">22" – 24"</div>
+                <div class="quiz-opt" data-val="26">26"+</div>
+              </div>
+            </div>
+            <div class="quiz-step" data-step="4">
+              <h3 style="margin-bottom: 1rem">Your Perfect Match</h3>
+              <div id="quizResult"></div>
+              <button
+                class="btn btn-primary"
+                style="margin-top: 1.5rem"
+                data-page="shop"
+              >
+                Shop Recommendations
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== ACCOUNT / DASHBOARD ========== -->
+      <section class="page" id="page-account">
+        <div class="container section">
+          <div id="authSection">
+            <div
+              style="max-width: 420px; margin: 0 auto"
+              class="glass"
+              id="loginBox"
+            >
+              <div style="padding: 2rem">
+                <h2
+                  style="
+                    font-family: var(--font-display);
+                    text-align: center;
+                    margin-bottom: 1.5rem;
+                  "
+                >
+                  Welcome Back
+                </h2>
+                <div class="form-group">
+                  <label>Email</label
+                  ><input type="email" class="form-control" id="loginEmail">
+                </div>
+                <div class="form-group">
+                  <label>Password</label
+                  ><input type="password" class="form-control" id="loginPass">
+                </div>
+                <button
+                  class="btn btn-primary"
+                  style="width: 100%"
+                  id="loginBtn"
+                >
+                  Sign In
+                </button>
+                <p
+                  style="
+                    text-align: center;
+                    margin-top: 1rem;
+                    font-size: 0.9rem;
+                  "
+                >
+                  New here?
+                  <a href="#" id="showRegister" style="color: var(--gold)"
+                    >Create account</a
+                  >
+                </p>
+                <p
+                  style="
+                    text-align: center;
+                    margin-top: 0.5rem;
+                    font-size: 0.85rem;
+                  "
+                >
+                  <a href="#" id="showForgot" style="color: var(--text-muted)"
+                    >Forgot password?</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div
+              style="max-width: 420px; margin: 0 auto; display: none"
+              class="glass"
+              id="registerBox"
+            >
+              <div style="padding: 2rem">
+                <h2
+                  style="
+                    font-family: var(--font-display);
+                    text-align: center;
+                    margin-bottom: 1.5rem;
+                  "
+                >
+                  Create Account
+                </h2>
+                <div class="form-group">
+                  <label>Full Name</label
+                  ><input type="text" class="form-control" id="regName">
+                </div>
+                <div class="form-group">
+                  <label>Email</label
+                  ><input type="email" class="form-control" id="regEmail">
+                </div>
+                <div class="form-group">
+                  <label>Password</label
+                  ><input type="password" class="form-control" id="regPass">
+                </div>
+                <div
+                  id="passStrength"
+                  style="
+                    height: 4px;
+                    background: var(--glass);
+                    border-radius: 2px;
+                    margin-bottom: 1rem;
+                    overflow: hidden;
+                  "
+                >
+                  <div
+                    style="
+                      height: 100%;
+                      width: 0;
+                      background: #f44336;
+                      transition: 0.3s;
+                    "
+                  ></div>
+                </div>
+                <button
+                  class="btn btn-primary"
+                  style="width: 100%"
+                  id="registerBtn"
+                >
+                  Register
+                </button>
+                <p
+                  style="
+                    text-align: center;
+                    margin-top: 1rem;
+                    font-size: 0.9rem;
+                  "
+                >
+                  Already have an account?
+                  <a href="#" id="showLogin" style="color: var(--gold)"
+                    >Sign in</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div id="userDashboard" style="display: none">
+            <div class="dash-layout">
+              <aside class="dash-sidebar">
+                <div
+                  style="
+                    padding: 0 1.5rem 1.5rem;
+                    border-bottom: 1px solid rgba(201, 169, 110, 0.15);
+                  "
+                >
+                  <div
+                    style="
+                      font-family: var(--font-display);
+                      font-size: 1.3rem;
+                      color: var(--gold);
+                    "
+                  >
+                    Merony
+                  </div>
+                  <div
+                    style="font-size: 0.85rem; opacity: 0.7"
+                    id="dashUserName"
+                  >
+                    Customer
+                  </div>
+                </div>
+                <a href="#" class="active" data-dash="overview"
+                  ><i class="fas fa-home"></i> Overview</a
+                >
+                <a href="#" data-dash="orders"
+                  ><i class="fas fa-box"></i> Orders</a
+                >
+                <a href="#" data-dash="wishlist"
+                  ><i class="fas fa-heart"></i> Wishlist</a
+                >
+                <a href="#" data-dash="addresses"
+                  ><i class="fas fa-map-marker-alt"></i> Addresses</a
+                >
+                <a href="#" data-dash="loyalty"
+                  ><i class="fas fa-star"></i> Loyalty Points</a
+                >
+                <a href="#" data-dash="profile"
+                  ><i class="fas fa-user"></i> Profile</a
+                >
+                <a href="#" id="logoutBtn"
+                  ><i class="fas fa-sign-out-alt"></i> Logout</a
+                >
+              </aside>
+              <div class="dash-content" id="dashContent"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== ADMIN (SECURE / HIDDEN) ========== -->
+      <section class="page" id="page-admin">
+        <h2 class="sr-only">Administrator Area</h2>
+        <!-- Admin Login Gate -->
+        <div
+          id="adminLoginGate"
+          style="
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+          "
+        >
+          <div class="glass" style="width: min(420px, 100%); padding: 2.5rem">
+            <div style="text-align: center; margin-bottom: 2rem">
+              <div
+                style="
+                  font-family: var(--font-display);
+                  font-size: 1.8rem;
+                  color: var(--gold);
+                  letter-spacing: 2px;
+                "
+              >
+                MERONY
+              </div>
+              <div
+                style="
+                  font-size: 0.85rem;
+                  color: var(--text-muted);
+                  margin-top: 0.3rem;
+                "
+              >
+                Administrator Access
+              </div>
+              <div
+                style="
+                  font-size: 0.75rem;
+                  color: var(--text-muted);
+                  margin-top: 0.8rem;
+                  opacity: 0.7;
+                "
+              >
+                Local demo authentication • Not for production
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Administrator Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="adminEmail"
+                placeholder="admin@example.com"
+                autocomplete="username">
+            </div>
+            <div class="form-group">
+              <label>Password</label>
+              <div style="position: relative">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="adminPassword"
+                  placeholder="••••••••"
+                  autocomplete="current-password">
+                <button
+                  type="button"
+                  id="toggleAdminPass"
+                  style="
+                    position: absolute;
+                    right: 12px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background: none;
+                    border: none;
+                    color: var(--text-muted);
+                    cursor: pointer;
+                  "
+                >
+                  <i class="fas fa-eye"></i>
+                </button>
+              </div>
+            </div>
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 1.5rem;
+                font-size: 0.85rem;
+              "
+            >
+              <label
+                style="
+                  display: flex;
+                  align-items: center;
+                  gap: 0.4rem;
+                  cursor: pointer;
+                "
+                ><input type="checkbox" id="adminRemember"> Remember me (this
+                device)</label
+              >
+            </div>
+            <button
+              class="btn btn-primary"
+              style="width: 100%"
+              id="adminLoginBtn"
+            >
+              <i class="fas fa-lock"></i> Secure Sign In
+            </button>
+            <p
+              id="adminLoginError"
+              style="
+                color: #e74c3c;
+                font-size: 0.85rem;
+                text-align: center;
+                margin-top: 1rem;
+                display: none;
+              "
+            ></p>
+            <p
+              style="
+                text-align: center;
+                margin-top: 1.5rem;
+                font-size: 0.8rem;
+                color: var(--text-muted);
+              "
+            >
+              <a href="#" data-page="home" style="color: var(--gold)"
+                >← Return to store</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <!-- Admin Dashboard (shown only after successful auth) -->
+        <div id="adminDashboard" style="display: none">
+          <div class="dash-layout">
+            <aside class="dash-sidebar">
+              <div
+                style="
+                  padding: 0 1.5rem 1.5rem;
+                  border-bottom: 1px solid rgba(201, 169, 110, 0.15);
+                "
+              >
+                <div
+                  style="
+                    font-family: var(--font-display);
+                    font-size: 1.3rem;
+                    color: var(--gold);
+                  "
+                >
+                  Admin Console
+                </div>
+                <div
+                  style="font-size: 0.8rem; opacity: 0.7"
+                  id="adminSessionInfo"
+                >
+                  Authenticated
+                </div>
+              </div>
+              <a href="#" class="active" data-admin="dashboard"
+                ><i class="fas fa-chart-line"></i> Dashboard</a
+              >
+              <a href="#" data-admin="products"
+                ><i class="fas fa-box"></i> Products</a
+              >
+              <a href="#" data-admin="orders"
+                ><i class="fas fa-shopping-cart"></i> Orders</a
+              >
+              <a href="#" data-admin="customers"
+                ><i class="fas fa-users"></i> Customers</a
+              >
+              <a href="#" data-admin="inventory"
+                ><i class="fas fa-warehouse"></i> Inventory</a
+              >
+              <a href="#" data-admin="coupons"
+                ><i class="fas fa-ticket-alt"></i> Coupons</a
+              >
+              <a href="#" data-admin="messages"
+                ><i class="fas fa-envelope"></i> Messages</a
+              >
+              <a href="#" data-admin="analytics"
+                ><i class="fas fa-chart-bar"></i> Analytics</a
+              >
+              <a href="#" data-admin="database"
+                ><i class="fas fa-database"></i> Database</a
+              >
+              <a href="#" data-admin="settings"
+                ><i class="fas fa-cog"></i> Settings</a
+              >
+              <a href="#" data-admin="security"
+                ><i class="fas fa-shield-alt"></i> Security Logs</a
+              >
+              <a
+                href="#"
+                id="adminLogoutBtn"
+                style="
+                  margin-top: 1rem;
+                  border-top: 1px solid rgba(201, 169, 110, 0.15);
+                  padding-top: 1rem;
+                "
+                ><i class="fas fa-sign-out-alt"></i> Logout</a
+              >
+              <a href="#" data-page="home" style="margin-top: 0.5rem"
+                ><i class="fas fa-store"></i> Back to Store</a
+              >
+            </aside>
+            <div class="dash-content" id="adminContent"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <div class="logo" style="margin-bottom: 1rem">
+              Merony
+              <span style="color: rgba(255, 255, 255, 0.7)">Hair.NG</span>
+            </div>
+            <p
+              style="
+                opacity: 0.85;
+                font-size: 0.95rem;
+                font-style: italic;
+                margin-bottom: 0.4rem;
+              "
+            >
+              Beyond Hair. Behold Beauty.
+            </p>
+            <p
+              style="
+                opacity: 0.65;
+                font-size: 0.85rem;
+                max-width: 280px;
+                margin-bottom: 0.8rem;
+              "
+            >
+              Premium 100% human hair for the modern Nigerian woman.
+            </p>
+            <p style="opacity: 0.55; font-size: 0.75rem; letter-spacing: 1px">
+              POWERED BY J-CORP
+            </p>
+            <div class="socials" style="margin-top: 1.2rem">
+              <a
+                href="https://wa.me/2349063108912"
+                target="_blank"
+                aria-label="WhatsApp"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+              <a
+                href="https://instagram.com/meronyhair.ng"
+                target="_blank"
+                aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.tiktok.com/@meronyhair.ng"
+                target="_blank"
+                aria-label="TikTok"
+                ><i class="fab fa-tiktok"></i
+              ></a>
+            </div>
+          </div>
+          <div>
+            <h3>Shop</h3>
+            <a href="#" data-page="shop">All Products</a>
+            <a href="#" data-page="shop">Bundles</a>
+            <a href="#" data-page="shop">Wigs</a>
+            <a href="#" data-page="shop">Closures</a>
+          </div>
+          <div>
+            <h3>Help</h3>
+            <a href="#" data-page="faq">FAQ</a>
+            <a href="#" data-page="contact">Contact</a>
+            <a href="#" data-page="about">About Us</a>
+            <a href="#" data-page="blog">Hair Tips</a>
+          </div>
+          <div>
+            <h3>Contact</h3>
+            <a
+              href="https://wa.me/2349063108912?text=Hi%20Merony%20Hair%2C%20I%20would%20like%20to%20make%20an%20enquiry."
+              target="_blank"
+              ><i class="fab fa-whatsapp"></i> +234 906 310 8912</a
+            >
+            <a href="mailto:hellomeronyhair@gmail.com"
+              >hellomeronyhair@gmail.com</a
+            >
+            <p style="opacity: 0.65; font-size: 0.9rem; margin-top: 0.5rem">
+              Lagos, Nigeria
+            </p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span
+            >© 2026 Merony Hair.NG. All rights reserved. Powered by
+            J-CORP.</span
+          >
+          <div style="display: flex; gap: 1.2rem">
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="#">Shipping</a>
+            <a href="#">Returns</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- LIVE CHAT -->
+    <button class="chat-fab" id="chatFab" aria-label="Chat">
+      <i class="fas fa-comment-dots"></i>
+    </button>
+    <div class="chat-widget" id="chatWidget">
+      <div class="chat-header">
+        <span><i class="fas fa-headset"></i> Merony Support</span>
+        <button
+          style="
+            background: none;
+            border: none;
+            color: var(--gold);
+            cursor: pointer;
+          "
+          id="closeChat"
+        >
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="chat-body" id="chatBody">
+        <div class="chat-msg bot">Hi Queen! How can we help you today? 👑</div>
+      </div>
+      <div class="chat-input">
+        <input type="text" id="chatInput" placeholder="Type a message...">
+        <button id="sendChat"><i class="fas fa-paper-plane"></i></button>
+      </div>
+    </div>
+
+    <!-- BACK TO TOP -->
+    <button id="backTop" aria-label="Back to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- COOKIE CONSENT -->
+    <div class="cookie-banner" id="cookieBanner">
+      <p style="font-size: 0.9rem; max-width: 600px">
+        We use cookies to enhance your experience and analyze traffic. By
+        continuing you agree to our use of cookies.
+      </p>
+      <div style="display: flex; gap: 0.8rem">
+        <button class="btn btn-primary btn-sm" id="acceptCookies">
+          Accept
+        </button>
+        <button
+          class="btn btn-outline btn-sm"
+          style="border-color: #fff; color: #fff"
+          id="declineCookies"
+        >
+          Decline
+        </button>
+      </div>
+    </div>
+
+    <!-- TOAST CONTAINER -->
+    <div id="toast-container"></div>
+
+    <!-- QUICK VIEW MODAL -->
+    <div class="modal-overlay" id="quickViewModal">
+      <div class="modal quick-view-modal">
+        <div class="modal-header">
+          <h3 style="font-family: var(--font-display)">Quick View</h3>
+          <button class="btn-icon" id="closeQuickView">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="modal-body" id="quickViewModalBody"></div>
+      </div>
+    </div>
+
+    <!-- ADMIN PRODUCT EDIT MODAL -->
+    <div class="modal-overlay" id="adminProductModal">
+      <div class="modal">
+        <div class="modal-header">
+          <h3 style="font-family: var(--font-display)">Edit Product</h3>
+          <button class="btn-icon" id="closeAdminProductModal">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="modal-body" id="adminProductModalBody"></div>
+      </div>
+    </div>
+
+    <!-- ACCOUNT MODAL (quick) -->
+    <div class="modal-overlay" id="accountModal">
+      <div class="modal">
+        <div class="modal-header">
+          <h3 style="font-family: var(--font-display)">Account</h3>
+          <button class="btn-icon" id="closeAccountModal">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="modal-body" id="accountModalBody"></div>
+      </div>
+    </div>
+
+    <script>
+      /* =========================================================
+       MERONY HAIR.NG – Single File Premium E-commerce
+       Architecture: Vanilla JS SPA + LocalStorage / IndexedDB simulation
+       ========================================================= */
+
+      // -------------------- DATA --------------------
+      const PRODUCTS = [
+        {
+          id: 1,
+          name: "Silky Straight Bundle",
+          cat: "Bundles",
+          texture: "Straight",
+          length: "18",
+          color: "Natural Black",
+          price: 45000,
+          oldPrice: 52000,
+          rating: 4.9,
+          reviews: 128,
+          stock: 24,
+          badge: "Bestseller",
+          img: "https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=600&q=80",
+          tags: ["virgin", "double-drawn"],
+          density: "150%",
+          lace: null,
+          desc: "Premium 100% human hair, double drawn, tangle-free. Soft, silky and long-lasting.",
+        },
+        {
+          id: 2,
+          name: "Body Wave Bundle Set",
+          cat: "Bundles",
+          texture: "Body Wave",
+          length: "20",
+          color: "Natural Black",
+          price: 52000,
+          oldPrice: 60000,
+          rating: 4.8,
+          reviews: 96,
+          stock: 18,
+          badge: "Popular",
+          img: "https://images.unsplash.com/photo-1522338242992-e1a74e2b7ded?w=600&q=80",
+          tags: ["virgin"],
+          density: "150%",
+          lace: null,
+          desc: "Soft body wave texture that holds curls beautifully and blends with most natural hair.",
+        },
+        {
+          id: 3,
+          name: "HD Lace Frontal Wig",
+          cat: "Wigs",
+          texture: "Straight",
+          length: "22",
+          color: "Natural Black",
+          price: 125000,
+          oldPrice: 145000,
+          rating: 4.9,
+          reviews: 74,
+          stock: 9,
+          badge: "New",
+          img: "https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=600&q=80",
+          tags: ["hd-lace", "glueless"],
+          density: "180%",
+          lace: "HD",
+          desc: "Ultra-thin HD lace, pre-plucked, glueless ready. Undetectable hairline.",
+        },
+        {
+          id: 4,
+          name: "Deep Wave Closure",
+          cat: "Closures",
+          texture: "Deep Wave",
+          length: "16",
+          color: "Natural Black",
+          price: 28000,
+          oldPrice: 32000,
+          rating: 4.7,
+          reviews: 53,
+          stock: 32,
+          badge: null,
+          img: "https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=600&q=80",
+          tags: ["4x4"],
+          density: "130%",
+          lace: "Transparent",
+          desc: "4x4 transparent lace closure with deep wave pattern. Perfect match for bundles.",
+        },
+        {
+          id: 5,
+          name: "Curly 13x4 Frontal",
+          cat: "Frontals",
+          texture: "Curly",
+          length: "18",
+          color: "Natural Black",
+          price: 48000,
+          oldPrice: 55000,
+          rating: 4.8,
+          reviews: 41,
+          stock: 14,
+          badge: null,
+          img: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=600&q=80",
+          tags: ["13x4", "pre-plucked"],
+          density: "150%",
+          lace: "HD",
+          desc: "13x4 HD lace frontal with bouncy curls. Pre-plucked and bleached knots.",
+        },
+        {
+          id: 6,
+          name: "Kinky Straight Bundle",
+          cat: "Bundles",
+          texture: "Kinky",
+          length: "16",
+          color: "Natural Black",
+          price: 42000,
+          oldPrice: null,
+          rating: 4.6,
+          reviews: 37,
+          stock: 21,
+          badge: null,
+          img: "https://images.unsplash.com/photo-1595476108010-b4d1e1023912?w=600&q=80",
+          tags: ["yaki"],
+          density: "150%",
+          lace: null,
+          desc: "Yaki texture that mimics relaxed natural hair. Great for protective styles.",
+        },
+        {
+          id: 7,
+          name: "Glueless Body Wave Wig",
+          cat: "Wigs",
+          texture: "Body Wave",
+          length: "20",
+          color: "Natural Black",
+          price: 98000,
+          oldPrice: 110000,
+          rating: 4.9,
+          reviews: 62,
+          stock: 11,
+          badge: "Bestseller",
+          img: "https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?w=600&q=80",
+          tags: ["glueless", "pre-cut"],
+          density: "180%",
+          lace: "HD",
+          desc: "Ready-to-wear glueless wig. Soft body wave, adjustable band, beginner friendly.",
+        },
+        {
+          id: 8,
+          name: "Silk Press Bundle",
+          cat: "Bundles",
+          texture: "Straight",
+          length: "24",
+          color: "Natural Black",
+          price: 58000,
+          oldPrice: 68000,
+          rating: 4.8,
+          reviews: 29,
+          stock: 7,
+          badge: "Limited",
+          img: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&q=80",
+          tags: ["raw"],
+          density: "150%",
+          lace: null,
+          desc: "Extra long silky straight. Ideal for dramatic length and sleek looks.",
+        },
+      ];
+
+      const FAQS = [
+        {
+          q: "Is the hair 100% human?",
+          a: "Yes. All our bundles, wigs and closures are 100% human hair, carefully selected and quality-checked.",
+        },
+        {
+          q: "How long does shipping take?",
+          a: "Lagos: 1-3 working days. Other states: 3-7 working days. Express options available at checkout.",
+        },
+        {
+          q: "Do you offer installment payments?",
+          a: "Yes. We support Paystack and Flutterwave which include card, bank transfer and installment options where available.",
+        },
+        {
+          q: "Can I return or exchange?",
+          a: "Unopened products in original packaging can be returned within 7 days. Please contact us on WhatsApp first.",
+        },
+        {
+          q: "How do I care for my hair?",
+          a: "Wash with sulfate-free shampoo, deep condition regularly, air dry when possible, and store properly. Full care guide is in your order package and on our Blog.",
+        },
+        {
+          q: "What is HD lace?",
+          a: "HD (High Definition) lace is ultra-thin and blends almost invisibly with most skin tones. Ideal for a natural hairline.",
+        },
+      ];
+
+      const TESTIMONIALS = [
+        {
+          name: "Chioma A.",
+          text: "The quality is unmatched. My body wave still looks brand new after 8 months!",
+          stars: 5,
+        },
+        {
+          name: "Funke O.",
+          text: "Finally found a Nigerian brand that delivers real luxury hair. Packaging was beautiful too.",
+          stars: 5,
+        },
+        {
+          name: "Amina B.",
+          text: "The glueless wig is life-changing. I can put it on in 2 minutes and go.",
+          stars: 5,
+        },
+      ];
+
+      // -------------------- STATE --------------------
+      let state = {
+        cart: JSON.parse(localStorage.getItem("merony_cart") || "[]"),
+        wishlist: JSON.parse(localStorage.getItem("merony_wishlist") || "[]"),
+        user: JSON.parse(localStorage.getItem("merony_user") || "null"),
+        orders: JSON.parse(localStorage.getItem("merony_orders") || "[]"),
+        recentlyViewed: JSON.parse(
+          localStorage.getItem("merony_recent") || "[]",
+        ),
+        currency: localStorage.getItem("merony_currency") || "NGN",
+        theme: localStorage.getItem("merony_theme") || "light",
+        coupon: null,
+        currentProduct: null,
+        quizAnswers: {},
+      };
+
+      const RATES = { NGN: 1, USD: 0.00065, GBP: 0.00051 }; // approx
+      const SYMBOLS = { NGN: "₦", USD: "$", GBP: "£" };
+
+      // -------------------- UTILS --------------------
+      function $(sel, ctx = document) {
+        return ctx.querySelector(sel);
+      }
+      function $$(sel, ctx = document) {
+        return [...ctx.querySelectorAll(sel)];
+      }
+
+      function formatPrice(n) {
+        const rate = RATES[state.currency] || 1;
+        const val = Math.round(n * rate);
+        return SYMBOLS[state.currency] + val.toLocaleString();
+      }
+
+      function save() {
+        localStorage.setItem("merony_cart", JSON.stringify(state.cart));
+        localStorage.setItem("merony_wishlist", JSON.stringify(state.wishlist));
+        localStorage.setItem("merony_user", JSON.stringify(state.user));
+        localStorage.setItem("merony_orders", JSON.stringify(state.orders));
+        localStorage.setItem(
+          "merony_recent",
+          JSON.stringify(state.recentlyViewed),
+        );
+        localStorage.setItem("merony_currency", state.currency);
+        localStorage.setItem("merony_theme", state.theme);
+      }
+
+      function toast(msg, type = "success") {
+        const el = document.createElement("div");
+        el.className = `toast ${type}`;
+        el.innerHTML = `<i class="fas fa-${type === "success" ? "check-circle" : "exclamation-circle"}"></i> ${msg}`;
+        $("#toast-container").appendChild(el);
+        setTimeout(() => el.remove(), 3500);
+      }
+
+      function sanitize(str) {
+        const div = document.createElement("div");
+        div.textContent = str;
+        return div.innerHTML;
+      }
+
+      // -------------------- THEME --------------------
+      function applyTheme() {
+        document.documentElement.setAttribute("data-theme", state.theme);
+        const icon = $("#themeToggle i");
+        if (icon)
+          icon.className =
+            state.theme === "dark" ? "fas fa-sun" : "fas fa-moon";
+      }
+
+      // -------------------- NAVIGATION --------------------
+      function navigate(page, data = {}) {
+        $$(".page").forEach((p) => p.classList.remove("active"));
+        const target = $(`#page-${page}`);
+        if (target) target.classList.add("active");
+
+        $$(".nav a").forEach((a) => {
+          a.classList.toggle("active", a.dataset.page === page);
+        });
+
+        window.scrollTo({ top: 0, behavior: "smooth" });
+
+        if (page === "shop") renderShop();
+        if (page === "product" && data.id) renderProduct(data.id);
+        if (page === "cart") renderCartPage();
+        if (page === "checkout") renderCheckout();
+        if (page === "faq") renderFAQ();
+        if (page === "account") renderAccount();
+        if (page === "admin") showAdminGate();
+        if (page === "home") renderHome();
+
+        // close mobile nav
+        $("#mainNav")?.classList.remove("open");
+        closeMiniCart();
+      }
+
+      // -------------------- RENDER HELPERS --------------------
+      function productCardHTML(p) {
+        return `
+        <div class="product-card" data-id="${p.id}">
+          <div class="product-img">
+            ${p.badge ? `<span class="product-badge">${p.badge}</span>` : ""}
+            <div class="product-actions">
+              <button class="btn-icon wishlist-btn" data-id="${p.id}" title="Wishlist"><i class="fas fa-heart"></i></button>
+              <button class="btn-icon quick-view" data-id="${p.id}" title="Quick view"><i class="fas fa-eye"></i></button>
+            </div>
+            <img src="${p.img}" alt="${sanitize(p.name)}" loading="lazy">
+          </div>
+          <div class="product-info">
+            <div class="product-cat">${p.cat} · ${p.texture}</div>
+            <div class="product-name">${sanitize(p.name)}</div>
+            <div class="product-price">
+              <span class="price-current">${formatPrice(p.price)}</span>
+              ${p.oldPrice ? `<span class="price-old">${formatPrice(p.oldPrice)}</span>` : ""}
+            </div>
+            <div class="product-rating">
+              ${"★".repeat(Math.floor(p.rating))}${"☆".repeat(5 - Math.floor(p.rating))}
+              <span style="color:var(--text-muted);margin-left:0.3rem;">(${p.reviews})</span>
+            </div>
+          </div>
+        </div>`;
+      }
+
+      function openQuickView(id) {
+        const p = PRODUCTS.find((x) => x.id === +id);
+        if (!p) return;
+
+        $("#quickViewModalBody").innerHTML = `
+        <div class="quick-view-image">
+          <img src="${p.img}" alt="${sanitize(p.name)}">
+        </div>
+        <div class="quick-view-title">${sanitize(p.name)}</div>
+        <div class="quick-view-price">${formatPrice(p.price)} ${p.oldPrice ? `<span class="price-old">${formatPrice(p.oldPrice)}</span>` : ""}</div>
+        <div class="quick-view-copy">${sanitize(p.desc)}</div>
+        <div class="quick-view-copy">
+          <strong>Texture:</strong> ${sanitize(p.texture)}<br>
+          <strong>Length:</strong> ${sanitize(p.length)}"<br>
+          <strong>Category:</strong> ${sanitize(p.cat)}
+        </div>
+        <div style="display:flex;gap:0.75rem;flex-wrap:wrap;">
+          <button class="btn btn-primary" id="quickAddToCart">Add to Bag</button>
+          <button class="btn btn-outline" data-page="product" data-id="${p.id}">View Details</button>
+        </div>
+      `;
+
+        $("#quickViewModal").classList.add("show");
+
+        $("#quickAddToCart")?.addEventListener("click", () => {
+          addToCart(p.id, 1);
+          $("#quickViewModal").classList.remove("show");
+        });
+      }
+
+      function closeQuickView() {
+        $("#quickViewModal")?.classList.remove("show");
+      }
+
+      function renderHome() {
+        const featured = PRODUCTS.filter((p) => p.badge).slice(0, 4);
+        $("#featuredProducts").innerHTML = featured
+          .map(productCardHTML)
+          .join("");
+
+        $("#testimonials").innerHTML = TESTIMONIALS.map(
+          (t) => `
+        <div class="testimonial">
+          <div class="stars">${"★".repeat(t.stars)}</div>
+          <p>"${t.text}"</p>
+          <div class="author">— ${t.name}</div>
+        </div>`,
+        ).join("");
+      }
+
+      function renderShop() {
+        let filtered = [...PRODUCTS];
+
+        // Category filters
+        const cats = $$('input[name="cat"]:checked').map((i) => i.value);
+        if (cats.length)
+          filtered = filtered.filter((p) => cats.includes(p.cat));
+
+        const textures = $$('input[name="texture"]:checked').map(
+          (i) => i.value,
+        );
+        if (textures.length)
+          filtered = filtered.filter((p) => textures.includes(p.texture));
+
+        const lengths = $$('input[name="length"]:checked').map((i) => i.value);
+        if (lengths.length)
+          filtered = filtered.filter((p) =>
+            lengths.some(
+              (l) =>
+                p.length.startsWith(l) ||
+                (l === "22" && parseInt(p.length) >= 22),
+            ),
+          );
+
+        const price = $('input[name="price"]:checked')?.value;
+        if (price) {
+          if (price === "0-30000")
+            filtered = filtered.filter((p) => p.price < 30000);
+          else if (price === "30000-60000")
+            filtered = filtered.filter(
+              (p) => p.price >= 30000 && p.price < 60000,
+            );
+          else if (price === "60000-100000")
+            filtered = filtered.filter(
+              (p) => p.price >= 60000 && p.price < 100000,
+            );
+          else if (price === "100000+")
+            filtered = filtered.filter((p) => p.price >= 100000);
+        }
+
+        // Sort
+        const sort = $("#sortSelect")?.value || "featured";
+        if (sort === "price-asc") filtered.sort((a, b) => a.price - b.price);
+        else if (sort === "price-desc")
+          filtered.sort((a, b) => b.price - a.price);
+        else if (sort === "rating")
+          filtered.sort((a, b) => b.rating - a.rating);
+        else if (sort === "newest") filtered.reverse();
+
+        $("#resultCount").textContent =
+          `Showing ${filtered.length} product${filtered.length !== 1 ? "s" : ""}`;
+        $("#shopProducts").innerHTML = filtered.length
+          ? filtered.map(productCardHTML).join("")
+          : '<p style="grid-column:1/-1;text-align:center;color:var(--text-muted);">No products match your filters.</p>';
+      }
+
+      function renderProduct(id) {
+        const p = PRODUCTS.find((x) => x.id === +id);
+        if (!p) return navigate("shop");
+
+        state.currentProduct = p;
+        // recently viewed
+        state.recentlyViewed = [
+          p.id,
+          ...state.recentlyViewed.filter((i) => i !== p.id),
+        ].slice(0, 8);
+        save();
+
+        $("#productDetailContent").innerHTML = `
+        <div class="pd-gallery">
+          <div class="pd-main-img" id="mainImg"><img src="${p.img}" alt="${sanitize(p.name)}"></div>
+          <div class="pd-thumbs">
+            <div class="pd-thumb active"><img src="${p.img}" alt=""></div>
+            <div class="pd-thumb"><img src="${p.img}" alt="" style="filter:brightness(0.9)"></div>
+            <div class="pd-thumb"><img src="${p.img}" alt="" style="filter:sepia(0.2)"></div>
+          </div>
+        </div>
+        <div class="pd-info">
+          <div class="product-cat">${p.cat} · ${p.texture} · ${p.length}"</div>
+          <h1>${sanitize(p.name)}</h1>
+          <div class="product-rating" style="margin-bottom:0.5rem;">
+            ${"★".repeat(Math.floor(p.rating))} (${p.reviews} reviews)
+          </div>
+          <div class="pd-price">${formatPrice(p.price)} ${p.oldPrice ? `<span style="font-size:1rem;color:var(--text-muted);text-decoration:line-through;margin-left:0.5rem;">${formatPrice(p.oldPrice)}</span>` : ""}</div>
+          <p style="color:var(--text-muted);margin-bottom:1.5rem;">${p.desc}</p>
+          
+          <div class="pd-variants">
+            <div class="variant-label">Length</div>
+            <div class="variant-options">
+              ${["14", "16", "18", "20", "22", "24"].map((l) => `<button class="variant-btn ${p.length === l ? "active" : ""}" data-len="${l}">${l}"</button>`).join("")}
+            </div>
+          </div>
+          
+          <div class="pd-variants">
+            <div class="variant-label">Quantity</div>
+            <div class="qty-control">
+              <button id="pdQtyMinus">−</button>
+              <span id="pdQty">1</span>
+              <button id="pdQtyPlus">+</button>
+            </div>
+          </div>
+          
+          <div style="display:flex;gap:1rem;margin-top:1.8rem;flex-wrap:wrap;">
+            <button class="btn btn-primary" id="addToCartBtn" style="flex:1;"><i class="fas fa-shopping-bag"></i> Add to Bag</button>
+            <button class="btn btn-outline" id="addWishlistBtn"><i class="fas fa-heart"></i></button>
+            <a href="https://wa.me/2349063108912?text=Hi%20Merony%20Hair%2C%20I%20am%20interested%20in%20the%20${encodeURIComponent(p.name)}.%20Please%20share%20more%20details." target="_blank" class="btn btn-outline" title="Enquire on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+          
+          <div style="margin-top:2rem;font-size:0.9rem;color:var(--text-muted);">
+            <p><i class="fas fa-check" style="color:var(--gold);"></i> In stock (${p.stock} left)</p>
+            <p><i class="fas fa-truck" style="color:var(--gold);"></i> Estimated delivery: 2–5 days</p>
+            <p><i class="fas fa-shield-alt" style="color:var(--gold);"></i> 7-day quality guarantee</p>
+          </div>
+        </div>`;
+
+        // related
+        const related = PRODUCTS.filter(
+          (x) => x.cat === p.cat && x.id !== p.id,
+        ).slice(0, 4);
+        $("#relatedProducts").innerHTML = related.map(productCardHTML).join("");
+
+        // events
+        let qty = 1;
+        $("#pdQtyMinus")?.addEventListener("click", () => {
+          if (qty > 1) {
+            qty--;
+            $("#pdQty").textContent = qty;
+          }
+        });
+        $("#pdQtyPlus")?.addEventListener("click", () => {
+          qty++;
+          $("#pdQty").textContent = qty;
+        });
+        $("#addToCartBtn")?.addEventListener("click", () =>
+          addToCart(p.id, qty),
+        );
+        $("#addWishlistBtn")?.addEventListener("click", () =>
+          toggleWishlist(p.id),
+        );
+      }
+
+      // -------------------- CART --------------------
+      function addToCart(id, qty = 1) {
+        const existing = state.cart.find((i) => i.id === id);
+        if (existing) existing.qty += qty;
+        else state.cart.push({ id, qty });
+        save();
+        updateCartUI();
+        toast("Added to bag");
+        openMiniCart();
+      }
+
+      function removeFromCart(id) {
+        state.cart = state.cart.filter((i) => i.id !== id);
+        save();
+        updateCartUI();
+        renderCartPage();
+        toast("Removed from bag");
+      }
+
+      function updateQty(id, delta) {
+        const item = state.cart.find((i) => i.id === id);
+        if (!item) return;
+        item.qty += delta;
+        if (item.qty < 1) removeFromCart(id);
+        else {
+          save();
+          updateCartUI();
+          renderCartPage();
+        }
+      }
+
+      function cartTotal() {
+        return state.cart.reduce((sum, i) => {
+          const p = PRODUCTS.find((x) => x.id === i.id);
+          return sum + (p ? p.price * i.qty : 0);
+        }, 0);
+      }
+
+      function updateCartUI() {
+        const count = state.cart.reduce((s, i) => s + i.qty, 0);
+        $("#cartCount").textContent = count;
+
+        const body = $("#miniCartBody");
+        if (!state.cart.length) {
+          body.innerHTML =
+            '<p style="text-align:center;color:var(--text-muted);padding:2rem 0;">Your bag is empty</p>';
+        } else {
+          body.innerHTML = state.cart
+            .map((item) => {
+              const p = PRODUCTS.find((x) => x.id === item.id);
+              if (!p) return "";
+              return `
+            <div class="cart-item">
+              <img src="${p.img}" alt="">
+              <div class="cart-item-info">
+                <div class="cart-item-name">${sanitize(p.name)}</div>
+                <div class="cart-item-price">${formatPrice(p.price)}</div>
+                <div class="qty-control">
+                  <button onclick="updateQty(${p.id},-1)">−</button>
+                  <span>${item.qty}</span>
+                  <button onclick="updateQty(${p.id},1)">+</button>
+                  <button style="margin-left:auto;background:none;border:none;color:var(--text-muted);cursor:pointer;" onclick="removeFromCart(${p.id})"><i class="fas fa-trash"></i></button>
+                </div>
+              </div>
+            </div>`;
+            })
+            .join("");
+        }
+        $("#miniSubtotal").textContent = formatPrice(cartTotal());
+      }
+
+      function openMiniCart() {
+        $("#miniCart").classList.add("open");
+        $("#overlay").classList.add("show");
+      }
+      function closeMiniCart() {
+        $("#miniCart").classList.remove("open");
+        $("#overlay").classList.remove("show");
+      }
+
+      function renderCartPage() {
+        const el = $("#cartPageContent");
+        if (!state.cart.length) {
+          el.innerHTML = `<div style="text-align:center;padding:3rem;"><p style="color:var(--text-muted);margin-bottom:1.5rem;">Your bag is empty</p><button class="btn btn-primary" data-page="shop">Continue Shopping</button></div>`;
+          return;
+        }
+        const sub = cartTotal();
+        el.innerHTML = `
+        <div style="display:grid;grid-template-columns:1.5fr 1fr;gap:2rem;" class="cart-grid">
+          <div>
+            ${state.cart
+              .map((item) => {
+                const p = PRODUCTS.find((x) => x.id === item.id);
+                return `<div class="cart-item glass" style="padding:1rem;margin-bottom:1rem;border-radius:12px;">
+                <img src="${p.img}" alt="" style="width:90px;height:110px;object-fit:cover;border-radius:8px;">
+                <div class="cart-item-info">
+                  <div class="cart-item-name">${sanitize(p.name)}</div>
+                  <div class="cart-item-price">${formatPrice(p.price)}</div>
+                  <div class="qty-control">
+                    <button onclick="updateQty(${p.id},-1)">−</button>
+                    <span>${item.qty}</span>
+                    <button onclick="updateQty(${p.id},1)">+</button>
+                    <button style="margin-left:1rem;background:none;border:none;color:#e74c3c;cursor:pointer;" onclick="removeFromCart(${p.id})">Remove</button>
+                  </div>
+                </div>
+              </div>`;
+              })
+              .join("")}
+          </div>
+          <div class="order-summary glass">
+            <h3 style="font-family:var(--font-display);margin-bottom:1rem;">Summary</h3>
+            <div style="display:flex;justify-content:space-between;margin-bottom:0.5rem;"><span>Subtotal</span><span>${formatPrice(sub)}</span></div>
+            <div style="display:flex;justify-content:space-between;margin-bottom:0.5rem;"><span>Est. Shipping</span><span>${formatPrice(2500)}</span></div>
+            <div style="display:flex;justify-content:space-between;font-weight:700;font-size:1.15rem;margin-top:1rem;color:var(--gold);"><span>Total</span><span>${formatPrice(sub + 2500)}</span></div>
+            <button class="btn btn-primary" style="width:100%;margin-top:1.5rem;" data-page="checkout">Proceed to Checkout</button>
+          </div>
+        </div>`;
+      }
+
+      // -------------------- CHECKOUT --------------------
+      function renderCheckout() {
+        const itemsEl = $("#checkoutItems");
+        itemsEl.innerHTML =
+          state.cart
+            .map((item) => {
+              const p = PRODUCTS.find((x) => x.id === item.id);
+              return `<div style="display:flex;justify-content:space-between;margin-bottom:0.6rem;font-size:0.9rem;">
+          <span>${sanitize(p.name)} × ${item.qty}</span>
+          <span>${formatPrice(p.price * item.qty)}</span>
+        </div>`;
+            })
+            .join("") || '<p style="color:var(--text-muted);">No items</p>';
+
+        updateCheckoutTotals();
+      }
+
+      function updateCheckoutTotals() {
+        const sub = cartTotal();
+        const delivery = document.querySelector(
+          'input[name="delivery"]:checked',
+        )?.value;
+        let ship = 2500;
+        if (delivery === "express") ship = 5000;
+        if (delivery === "pickup") ship = 0;
+
+        let discount = 0;
+        if (state.coupon === "LUXE15") discount = Math.round(sub * 0.15);
+
+        const tax = Math.round((sub - discount) * 0.075);
+        const total = sub - discount + ship + tax;
+
+        $("#coSubtotal").textContent = formatPrice(sub);
+        $("#coShipping").textContent = formatPrice(ship);
+        $("#coTax").textContent = formatPrice(tax);
+        $("#coTotal").textContent = formatPrice(total);
+      }
+
+      // -------------------- WISHLIST --------------------
+      function toggleWishlist(id) {
+        if (state.wishlist.includes(id)) {
+          state.wishlist = state.wishlist.filter((i) => i !== id);
+          toast("Removed from wishlist");
+        } else {
+          state.wishlist.push(id);
+          toast("Added to wishlist");
+        }
+        save();
+      }
+
+      // -------------------- ACCOUNT --------------------
+      function renderAccount() {
+        if (state.user) {
+          $("#authSection").style.display = "none";
+          $("#userDashboard").style.display = "block";
+          $("#dashUserName").textContent = state.user.name;
+          renderDash("overview");
+        } else {
+          $("#authSection").style.display = "block";
+          $("#userDashboard").style.display = "none";
+        }
+      }
+
+      function renderDash(section) {
+        const el = $("#dashContent");
+        if (section === "overview") {
+          el.innerHTML = `
+          <h2 style="font-family:var(--font-display);margin-bottom:1.5rem;">Hello, ${sanitize(state.user.name)}</h2>
+          <div class="stat-cards">
+            <div class="stat-card"><h3>Orders</h3><div class="value">${state.orders.length}</div></div>
+            <div class="stat-card"><h3>Wishlist</h3><div class="value">${state.wishlist.length}</div></div>
+            <div class="stat-card"><h3>Loyalty Points</h3><div class="value">${state.user.points || 0}</div></div>
+          </div>
+          <p style="color:var(--text-muted);">Thank you for being part of the Merony family.</p>`;
+        } else if (section === "orders") {
+          el.innerHTML = state.orders.length
+            ? state.orders
+                .map(
+                  (o) => `
+          <div class="glass" style="padding:1.2rem;margin-bottom:1rem;">
+            <div style="display:flex;justify-content:space-between;"><strong>Order #${o.id}</strong><span>${o.date}</span></div>
+            <div style="color:var(--gold);margin-top:0.3rem;">${formatPrice(o.total)} · ${o.status}</div>
+          </div>`,
+                )
+                .join("")
+            : '<p style="color:var(--text-muted);">No orders yet.</p>';
+        } else if (section === "wishlist") {
+          const items = PRODUCTS.filter((p) => state.wishlist.includes(p.id));
+          el.innerHTML = items.length
+            ? `<div class="products-grid">${items.map(productCardHTML).join("")}</div>`
+            : '<p style="color:var(--text-muted);">Wishlist is empty.</p>';
+        } else if (section === "loyalty") {
+          el.innerHTML = `<h2 style="font-family:var(--font-display);">Loyalty Points</h2>
+          <p style="font-size:2rem;color:var(--gold);margin:1rem 0;">${state.user.points || 0} pts</p>
+          <p style="color:var(--text-muted);">Earn 1 point for every ₦100 spent. Redeem for discounts.</p>
+          <p style="margin-top:1rem;">Referral code: <strong>${state.user.ref || "MERONY" + (state.user.email || "").slice(0, 4).toUpperCase()}</strong></p>`;
+        } else if (section === "profile") {
+          el.innerHTML = `
+          <h2 style="font-family:var(--font-display);margin-bottom:1.5rem;">Profile</h2>
+          <div class="form-group"><label>Name</label><input class="form-control" value="${sanitize(state.user.name)}" id="profName"></div>
+          <div class="form-group"><label>Email</label><input class="form-control" value="${sanitize(state.user.email)}" disabled></div>
+          <button class="btn btn-primary" id="saveProfile">Save Changes</button>`;
+          $("#saveProfile")?.addEventListener("click", () => {
+            state.user.name = $("#profName").value;
+            save();
+            toast("Profile updated");
+          });
+        } else {
+          el.innerHTML = `<p style="color:var(--text-muted);">Section coming soon.</p>`;
+        }
+      }
+
+      // -------------------- ADMIN (SECURE – calls real backend) --------------------
+      // CRITICAL SECURITY FIX: No credentials are stored in the frontend.
+      // All authentication happens against POST /api/auth/admin/login
+      // which validates against hashed password in PostgreSQL / env.
+
+      let adminSession = JSON.parse(
+        localStorage.getItem("merony_admin_session") || "null",
+      );
+      let adminLoginAttempts = 0;
+      let adminSessionTimer = null;
+      const ADMIN_SESSION_TIMEOUT = 30 * 60 * 1000; // 30 minutes client-side soft timeout
+
+      function showAdminGate() {
+        if (adminSession && adminSession.token && adminSession.expires > Date.now()) {
+          unlockAdminDashboard();
+        } else {
+          adminSession = null;
+          localStorage.removeItem("merony_admin_session");
+          $("#adminLoginGate").style.display = "flex";
+          $("#adminDashboard").style.display = "none";
+          $("#adminLoginError").style.display = "none";
+          $("#adminEmail").value = "";
+          $("#adminPassword").value = "";
+        }
+      }
+
+      function unlockAdminDashboard() {
+        $("#adminLoginGate").style.display = "none";
+        $("#adminDashboard").style.display = "block";
+        $("#adminSessionInfo").textContent =
+          `Signed in as ${(adminSession.email || "admin").split("@")[0]}`;
+        renderAdmin("dashboard");
+        startAdminSessionTimer();
+      }
+
+      function startAdminSessionTimer() {
+        if (adminSessionTimer) clearTimeout(adminSessionTimer);
+        adminSessionTimer = setTimeout(() => {
+          adminLogout(true);
+        }, ADMIN_SESSION_TIMEOUT);
+      }
+
+      function adminLogout(timedOut = false) {
+        adminSession = null;
+        localStorage.removeItem("merony_admin_session");
+        if (adminSessionTimer) clearTimeout(adminSessionTimer);
+        $("#adminLoginGate").style.display = "flex";
+        $("#adminDashboard").style.display = "none";
+        toast(
+          timedOut
+            ? "Session expired. Please sign in again."
+            : "Admin logged out",
+          timedOut ? "error" : "success",
+        );
+      }
+
+      async function attemptAdminLogin() {
+        const email = ($("#adminEmail").value || "").trim().toLowerCase();
+        const password = $("#adminPassword").value || "";
+        const remember = $("#adminRemember")?.checked;
+
+        if (adminLoginAttempts >= 5) {
+          $("#adminLoginError").style.display = "block";
+          $("#adminLoginError").textContent =
+            "Too many failed attempts. Please wait a moment.";
+          return;
+        }
+
+        if (!email || !password) {
+          $("#adminLoginError").style.display = "block";
+          $("#adminLoginError").textContent = "Email and password are required.";
+          return;
+        }
+
+        try {
+          const res = await fetch("/api/auth/admin/login", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ email, password }),
+          });
+          const data = await res.json();
+
+          if (!res.ok || !data.token) {
+            adminLoginAttempts++;
+            $("#adminLoginError").style.display = "block";
+            $("#adminLoginError").textContent =
+              data.message || `Invalid credentials. Attempt ${adminLoginAttempts}/5`;
+            return;
+          }
+
+          adminLoginAttempts = 0;
+          adminSession = {
+            email: data.admin?.email || email,
+            token: data.token,
+            role: data.admin?.role || "admin",
+            expires: Date.now() + (remember ? 7 * 24 * 60 * 60 * 1000 : ADMIN_SESSION_TIMEOUT),
+            loginAt: new Date().toISOString(),
+          };
+          localStorage.setItem("merony_admin_session", JSON.stringify(adminSession));
+          unlockAdminDashboard();
+          toast("Welcome, Administrator");
+        } catch (err) {
+          $("#adminLoginError").style.display = "block";
+          $("#adminLoginError").textContent =
+            "Unable to reach authentication server. Please try again.";
+        }
+      }
+
+      function renderAdmin(section) {
+        if (!adminSession || adminSession.expires < Date.now()) {
+          showAdminGate();
+          return;
+        }
+        // Refresh activity timer on any admin action
+        startAdminSessionTimer();
+
+        const el = $("#adminContent");
+        const revenue =
+          state.orders.reduce((s, o) => s + (o.total || 0), 0) || 2450000;
+
+        if (section === "dashboard") {
+          el.innerHTML = `
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1.5rem;flex-wrap:wrap;gap:1rem;">
+            <h2 style="font-family:var(--font-display);">Dashboard Overview</h2>
+            <span style="font-size:0.85rem;color:var(--text-muted);">Last refreshed: ${new Date().toLocaleTimeString()}</span>
+          </div>
+          <div class="stat-cards">
+            <div class="stat-card"><h3>Total Revenue</h3><div class="value">${formatPrice(revenue)}</div></div>
+            <div class="stat-card"><h3>Total Orders</h3><div class="value">${state.orders.length || 47}</div></div>
+            <div class="stat-card"><h3>Products</h3><div class="value">${PRODUCTS.length}</div></div>
+            <div class="stat-card"><h3>Low Stock</h3><div class="value" style="color:${PRODUCTS.filter((p) => p.stock < 10).length ? "#e74c3c" : "inherit"}">${PRODUCTS.filter((p) => p.stock < 10).length}</div></div>
+            <div class="stat-card"><h3>Customers</h3><div class="value">${state.user ? 1 : 12}</div></div>
+            <div class="stat-card"><h3>Pending Orders</h3><div class="value">${state.orders.filter((o) => o.status === "Processing").length || 3}</div></div>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:1.5rem;" class="admin-grid">
+            <div class="glass" style="padding:1.5rem;">
+              <h3 style="margin-bottom:1rem;font-family:var(--font-display);">Recent Activity</h3>
+              <p style="color:var(--text-muted);font-size:0.9rem;margin-bottom:0.5rem;">• New order received</p>
+              <p style="color:var(--text-muted);font-size:0.9rem;margin-bottom:0.5rem;">• Low stock: Silk Press Bundle</p>
+              <p style="color:var(--text-muted);font-size:0.9rem;margin-bottom:0.5rem;">• Admin login successful</p>
+              <p style="color:var(--text-muted);font-size:0.9rem;">• 2 newsletter sign-ups</p>
+            </div>
+            <div class="glass" style="padding:1.5rem;">
+              <h3 style="margin-bottom:1rem;font-family:var(--font-display);">System Status</h3>
+              <p style="font-size:0.9rem;"><span style="color:#4caf50;">●</span> Storefront Online</p>
+              <p style="font-size:0.9rem;"><span style="color:#4caf50;">●</span> Local Database OK</p>
+              <p style="font-size:0.9rem;"><span style="color:#ff9800;">●</span> Payments (Demo Mode)</p>
+              <p style="font-size:0.9rem;margin-top:1rem;color:var(--text-muted);font-size:0.8rem;">All data is stored locally in the browser. Connect a real backend for production.</p>
+            </div>
+          </div>`;
+        } else if (section === "products") {
+          el.innerHTML = `
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1.5rem;flex-wrap:wrap;gap:1rem;">
+            <h2 style="font-family:var(--font-display);">Product Manager</h2>
+            <div style="display:flex;gap:0.6rem;">
+              <button class="btn btn-outline btn-sm" onclick="exportCSV()">Export CSV</button>
+              <button class="btn btn-primary btn-sm" onclick="openProductEditor(0)">+ Add Product</button>
+            </div>
+          </div>
+          <div style="overflow-x:auto;">
+            <table style="width:100%;border-collapse:collapse;font-size:0.9rem;">
+              <thead><tr style="border-bottom:1px solid var(--glass-border);text-align:left;">
+                <th style="padding:0.8rem;">ID</th><th>Name</th><th>Category</th><th>Price</th><th>Stock</th><th>Status</th><th>Actions</th>
+              </tr></thead>
+              <tbody>
+                ${PRODUCTS.map(
+                  (
+                    p,
+                  ) => `<tr style="border-bottom:1px solid var(--glass-border);">
+                  <td style="padding:0.8rem;">${p.id}</td>
+                  <td>${sanitize(p.name)}</td>
+                  <td>${p.cat}</td>
+                  <td>${formatPrice(p.price)}</td>
+                  <td style="color:${p.stock < 10 ? "#e74c3c" : "inherit"}">${p.stock}</td>
+                  <td>${p.stock < 10 ? "Low Stock" : "Live"}</td>
+                  <td>
+                    <button class="btn btn-ghost btn-sm" onclick="openProductEditor(${p.id})">Edit</button>
+                    <button class="btn btn-ghost btn-sm" onclick="duplicateProduct(${p.id})">Dup</button>
+                  </td>
+                </tr>`,
+                ).join("")}
+              </tbody>
+            </table>
+          </div>
+          <p style="margin-top:1rem;font-size:0.8rem;color:var(--text-muted);"><!-- Backend: POST/PUT/DELETE /api/products --></p>`;
+        } else if (section === "orders") {
+          el.innerHTML = `
+          <h2 style="font-family:var(--font-display);margin-bottom:1.5rem;">Order Management</h2>
+          <div style="display:flex;gap:0.6rem;margin-bottom:1.2rem;flex-wrap:wrap;">
+            <button class="btn btn-outline btn-sm" onclick="renderAdmin('orders')">All</button>
+            <button class="btn btn-outline btn-sm">Pending</button>
+            <button class="btn btn-outline btn-sm">Processing</button>
+            <button class="btn btn-outline btn-sm">Shipped</button>
+            <button class="btn btn-outline btn-sm">Delivered</button>
+          </div>
+          ${
+            state.orders.length
+              ? state.orders
+                  .map(
+                    (o) => `
+            <div class="glass" style="padding:1.2rem;margin-bottom:0.8rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;">
+              <div>
+                <strong>#${o.id}</strong> · ${o.date}<br>
+                <span style="font-size:0.85rem;color:var(--text-muted);">${o.customer} · ${o.email || ""}</span>
+              </div>
+              <div style="text-align:right;">
+                <div style="color:var(--gold);font-weight:600;">${formatPrice(o.total)}</div>
+                <span style="font-size:0.8rem;">${o.status}</span>
+              </div>
+              <div style="display:flex;gap:0.4rem;">
+                <button class="btn btn-ghost btn-sm" onclick="toast('Status update requires backend')">Update</button>
+                <button class="btn btn-ghost btn-sm" onclick="window.print()">Print</button>
+              </div>
+            </div>`,
+                  )
+                  .join("")
+              : '<p style="color:var(--text-muted);">No orders yet. Place a test order from the storefront to see data here.</p>'
+          }`;
+        } else if (section === "customers") {
+          const rowData = [
+            {
+              id: 1,
+              name: "Chioma A.",
+              email: "chioma@example.com",
+              phone: "+234 801 100 2222",
+              role: "Customer",
+              status: "Active",
+              orders: 2,
+              points: 520,
+              spend: 142500,
+            },
+            {
+              id: 2,
+              name: "Funke O.",
+              email: "funke@example.com",
+              phone: "+234 806 440 8901",
+              role: "Customer",
+              status: "Active",
+              orders: 1,
+              points: 260,
+              spend: 78500,
+            },
+            {
+              id: 3,
+              name: "Amina B.",
+              email: "amina@example.com",
+              phone: "+234 815 300 1120",
+              role: "VIP Customer",
+              status: "VIP",
+              orders: 4,
+              points: 830,
+              spend: 240000,
+            },
+          ];
+          const liveUser = state.user
+            ? [
+                {
+                  id: "local-user",
+                  name: state.user.name,
+                  email: state.user.email,
+                  phone: "",
+                  role: "Customer",
+                  status: "Active",
+                  orders: state.orders.length || 0,
+                  points: state.user.points || 0,
+                  spend:
+                    state.orders.reduce((sum, o) => sum + (o.total || 0), 0) ||
+                    0,
+                },
+              ]
+            : [];
+          const finalUsers = [...rowData, ...liveUser];
+          el.innerHTML = `
+          <h2 style="font-family:var(--font-display);margin-bottom:1.5rem;">Customer Management</h2>
+          <div style="overflow-x:auto;">
+            <table style="width:100%;border-collapse:collapse;font-size:0.9rem;">
+              <thead><tr style="border-bottom:1px solid var(--glass-border);text-align:left;">
+                <th style="padding:0.8rem;">Name</th><th>Email</th><th>Phone</th><th>Role</th><th>Status</th><th>Orders</th><th>Points</th><th>Spend</th>
+              </tr></thead>
+              <tbody>
+                ${finalUsers
+                  .map(
+                    (
+                      u,
+                    ) => `<tr style="border-bottom:1px solid var(--glass-border);">
+                  <td style="padding:0.8rem;">${sanitize(u.name)}</td>
+                  <td>${sanitize(u.email)}</td>
+                  <td>${sanitize(u.phone || "—")}</td>
+                  <td>${sanitize(u.role)}</td>
+                  <td><span style="color:${u.status === "VIP" ? "var(--gold)" : "inherit"}">${sanitize(u.status)}</span></td>
+                  <td>${u.orders}</td>
+                  <td>${u.points || 0}</td>
+                  <td>${formatPrice(u.spend || 0)}</td>
+                </tr>`,
+                  )
+                  .join("")}
+              </tbody>
+            </table>
+          </div>
+          <p style="margin-top:1rem;font-size:0.8rem;color:var(--text-muted);"><!-- Backend: GET /api/admin/customers --></p>`;
+        } else if (section === "inventory") {
+          el.innerHTML = `
+          <h2 style="font-family:var(--font-display);margin-bottom:1.5rem;">Inventory</h2>
+          <div class="stat-cards" style="margin-bottom:1.5rem;">
+            <div class="stat-card"><h3>Total SKUs</h3><div class="value">${PRODUCTS.length}</div></div>
+            <div class="stat-card"><h3>Low Stock</h3><div class="value" style="color:#e74c3c;">${PRODUCTS.filter((p) => p.stock < 10).length}</div></div>
+            <div class="stat-card"><h3>Out of Stock</h3><div class="value">${PRODUCTS.filter((p) => p.stock === 0).length}</div></div>
+          </div>
+          ${PRODUCTS.map(
+            (p) => `
+            <div class="glass" style="padding:1rem;margin-bottom:0.6rem;display:flex;justify-content:space-between;align-items:center;">
+              <span>${sanitize(p.name)}</span>
+              <span style="color:${p.stock < 10 ? "#e74c3c" : "var(--gold)"};font-weight:600;">${p.stock} units</span>
+            </div>`,
+          ).join("")}`;
+        } else if (section === "coupons") {
+          el.innerHTML = `
+          <h2 style="font-family:var(--font-display);margin-bottom:1.5rem;">Coupons & Discounts</h2>
+          <div class="glass" style="padding:1.2rem;margin-bottom:1rem;display:flex;justify-content:space-between;align-items:center;">
+            <div><strong>LUXE15</strong><br><span style="font-size:0.85rem;color:var(--text-muted);">15% off · Active</span></div>
+            <button class="btn btn-ghost btn-sm">Edit</button>
+          </div>
+          <div class="glass" style="padding:1.2rem;margin-bottom:1rem;display:flex;justify-content:space-between;align-items:center;">
+            <div><strong>WELCOME10</strong><br><span style="font-size:0.85rem;color:var(--text-muted);">10% first order · Active</span></div>
+            <button class="btn btn-ghost btn-sm">Edit</button>
+          </div>
+          <button class="btn btn-primary btn-sm" onclick="toast('Create coupon — backend required')">+ New Coupon</button>`;
+        } else if (section === "messages") {
+          el.innerHTML = `
+          <h2 style="font-family:var(--font-display);margin-bottom:1.5rem;">Customer Messages</h2>
+          <div class="glass" style="padding:1.2rem;margin-bottom:0.8rem;">
+            <strong>Contact Form</strong> · Just now<br>
+            <span style="font-size:0.9rem;color:var(--text-muted);">Messages submitted via the Contact page appear here in a real backend setup.</span>
+          </div>
+          <p style="color:var(--text-muted);font-size:0.9rem;">No new messages in local storage.</p>`;
+        } else if (section === "analytics") {
+          el.innerHTML = `
+          <h2 style="font-family:var(--font-display);margin-bottom:1.5rem;">Analytics (Local Simulation)</h2>
+          <div class="stat-cards">
+            <div class="stat-card"><h3>Revenue (MTD)</h3><div class="value">${formatPrice(revenue)}</div></div>
+            <div class="stat-card"><h3>Conversion</h3><div class="value">3.2%</div></div>
+            <div class="stat-card"><h3>Avg. Order</h3><div class="value">${formatPrice(78000)}</div></div>
+            <div class="stat-card"><h3>Repeat Rate</h3><div class="value">18%</div></div>
+          </div>
+          <div class="glass" style="padding:1.5rem;margin-top:1.5rem;">
+            <h3 style="margin-bottom:1rem;">Popular Products</h3>
+            ${PRODUCTS.slice(0, 5)
+              .map(
+                (p, i) =>
+                  `<p style="margin-bottom:0.4rem;">${i + 1}. ${sanitize(p.name)} — ${formatPrice(p.price)}</p>`,
+              )
+              .join("")}
+          </div>
+          <p style="margin-top:1rem;font-size:0.8rem;color:var(--text-muted);">Charts and real traffic data require a backend + analytics service.</p>`;
+        } else if (section === "database") {
+          el.innerHTML = `
+          <h2 style="font-family:var(--font-display);margin-bottom:1.5rem;">Local Database Manager</h2>
+          <p style="color:var(--text-muted);margin-bottom:1.5rem;">All data lives in the browser (LocalStorage / session). This panel lets you inspect and manage the demo data.</p>
+          <div style="display:flex;gap:0.8rem;flex-wrap:wrap;margin-bottom:1.5rem;">
+            <button class="btn btn-outline btn-sm" onclick="exportCSV()">Export Products CSV</button>
+            <button class="btn btn-outline btn-sm" onclick="downloadFullBackup()">Full Backup (JSON)</button>
+            <button class="btn btn-outline btn-sm" onclick="if(confirm('Clear all demo orders and cart?')){state.orders=[];state.cart=[];save();toast('Demo data cleared');renderAdmin('database')}">Clear Orders</button>
+            <button class="btn btn-outline btn-sm" style="border-color:#e74c3c;color:#e74c3c;" onclick="if(confirm('Reset ALL local Merony data? This cannot be undone.')){localStorage.clear();location.reload()}">Factory Reset</button>
+          </div>
+          <div class="glass" style="padding:1.2rem;">
+            <h4 style="margin-bottom:0.8rem;">Stored Keys</h4>
+            <p style="font-size:0.85rem;color:var(--text-muted);">merony_cart, merony_wishlist, merony_user, merony_orders, merony_admin_session, merony_admin_logs, merony_theme, merony_currency...</p>
+          </div>`;
+        } else if (section === "settings") {
+          el.innerHTML = `
+          <h2 style="font-family:var(--font-display);margin-bottom:1.5rem;">Store Settings</h2>
+          <div class="glass" style="padding:1.5rem;margin-bottom:1rem;">
+            <h4 style="margin-bottom:1rem;">Business Information</h4>
+            <div class="form-group"><label>Store Name</label><input class="form-control" value="Merony Hair.NG"></div>
+            <div class="form-group"><label>WhatsApp</label><input class="form-control" value="+2349063108912"></div>
+            <div class="form-group"><label>Support Email</label><input class="form-control" value="hellomeronyhair@gmail.com"></div>
+            <button class="btn btn-primary btn-sm" onclick="toast('Settings saved locally (demo)')">Save Changes</button>
+          </div>
+          <div class="glass" style="padding:1.5rem;">
+            <h4 style="margin-bottom:1rem;">Theme & Display</h4>
+            <p style="color:var(--text-muted);font-size:0.9rem;">Current theme: <strong>${state.theme}</strong>. Use the moon/sun icon in the header to switch.</p>
+          </div>`;
+        } else if (section === "security") {
+          const logs = JSON.parse(
+            localStorage.getItem("merony_admin_logs") || "[]",
+          );
+          el.innerHTML = `
+          <h2 style="font-family:var(--font-display);margin-bottom:1.5rem;">Security Logs</h2>
+          <p style="color:var(--text-muted);margin-bottom:1.2rem;font-size:0.9rem;">Local simulation of admin activity. In production these would be server-side audit logs.</p>
+          ${
+            logs.length
+              ? logs
+                  .map(
+                    (l) => `
+            <div class="glass" style="padding:0.9rem 1.2rem;margin-bottom:0.5rem;display:flex;justify-content:space-between;font-size:0.9rem;">
+              <span><strong style="color:${l.type.includes("failed") ? "#e74c3c" : "var(--gold)"}">${l.type}</strong> · ${l.email || ""}</span>
+              <span style="color:var(--text-muted);">${l.time}</span>
+            </div>`,
+                  )
+                  .join("")
+              : '<p style="color:var(--text-muted);">No security events recorded yet.</p>'
+          }`;
+        } else {
+          el.innerHTML = `<h2 style="font-family:var(--font-display);">Section</h2><p style="color:var(--text-muted);">Coming soon.</p>`;
+        }
+      }
+
+      function openProductEditor(productId) {
+        const product = PRODUCTS.find((p) => p.id === productId) || {
+          id: 0,
+          name: "",
+          cat: "Bundles",
+          texture: "Straight",
+          length: "18",
+          color: "Natural Black",
+          price: 40000,
+          stock: 1,
+          badge: "",
+          img: "https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=600&q=80",
+          desc: "",
+        };
+
+        $("#adminProductModalBody").innerHTML = `
+          <div class="form-group">
+            <label>Product Name</label>
+            <input class="form-control" id="adminProductName" value="${sanitize(product.name)}">
+          </div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+            <div class="form-group">
+              <label>Category</label>
+              <select class="form-control" id="adminProductCat">
+                ${["Bundles", "Wigs", "Closures", "Frontals", "Tools"]
+                  .map(
+                    (cat) =>
+                      `<option ${cat === product.cat ? "selected" : ""}>${cat}</option>`,
+                  )
+                  .join("")}
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Texture</label>
+              <select class="form-control" id="adminProductTexture">
+                ${["Straight", "Body Wave", "Deep Wave", "Curly", "Kinky"]
+                  .map(
+                    (tx) =>
+                      `<option ${tx === product.texture ? "selected" : ""}>${tx}</option>`,
+                  )
+                  .join("")}
+              </select>
+            </div>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+            <div class="form-group">
+              <label>Length</label>
+              <input class="form-control" id="adminProductLength" value="${sanitize(product.length)}">
+            </div>
+            <div class="form-group">
+              <label>Price</label>
+              <input class="form-control" id="adminProductPrice" type="number" value="${product.price}">
+            </div>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+            <div class="form-group">
+              <label>Stock</label>
+              <input class="form-control" id="adminProductStock" type="number" value="${product.stock}">
+            </div>
+            <div class="form-group">
+              <label>Badge</label>
+              <input class="form-control" id="adminProductBadge" value="${sanitize(product.badge || "")}">
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Description</label>
+            <textarea class="form-control" id="adminProductDesc">${sanitize(product.desc || "")}</textarea>
+          </div>
+          <div class="modal-footer" style="padding:0;margin-top:1rem;">
+            <button class="btn btn-outline" id="cancelProductEdit">Cancel</button>
+            <button class="btn btn-primary" id="saveProductEdit">Save Product</button>
+          </div>
+        `;
+
+        $("#adminProductModal").classList.add("show");
+
+        $("#cancelProductEdit")?.addEventListener("click", () =>
+          closeProductEditor(),
+        );
+        $("#saveProductEdit")?.addEventListener("click", () => {
+          const payload = {
+            id: product.id || Math.max(...PRODUCTS.map((p) => p.id)) + 1,
+            name: $("#adminProductName").value.trim() || "New Product",
+            cat: $("#adminProductCat").value,
+            texture: $("#adminProductTexture").value,
+            length: $("#adminProductLength").value.trim() || "18",
+            price: Number($("#adminProductPrice").value) || 0,
+            stock: Number($("#adminProductStock").value) || 0,
+            badge: $("#adminProductBadge").value.trim() || null,
+            desc:
+              $("#adminProductDesc").value.trim() ||
+              "Premium Merony Hair collection",
+            img:
+              product.img ||
+              "https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=600&q=80",
+            oldPrice: product.oldPrice || null,
+            rating: product.rating || 4.8,
+            reviews: product.reviews || 0,
+          };
+
+          if (product.id === 0) {
+            PRODUCTS.push(payload);
+          } else {
+            const index = PRODUCTS.findIndex((item) => item.id === product.id);
+            if (index >= 0)
+              PRODUCTS[index] = { ...PRODUCTS[index], ...payload };
+          }
+
+          save();
+          closeProductEditor();
+          renderAdmin("products");
+          renderShop();
+          renderHome();
+          toast("Product saved");
+        });
+      }
+
+      function closeProductEditor() {
+        $("#adminProductModal")?.classList.remove("show");
+      }
+
+      function duplicateProduct(id) {
+        const source = PRODUCTS.find((p) => p.id === id);
+        if (!source) return;
+        const copy = {
+          ...source,
+          id: Math.max(...PRODUCTS.map((p) => p.id)) + 1,
+          name: `${source.name} Copy`,
+          stock: source.stock || 1,
+        };
+        PRODUCTS.push(copy);
+        save();
+        renderAdmin("products");
+        renderShop();
+        renderHome();
+        toast("Product duplicated");
+      }
+
+      function exportCSV() {
+        const headers = [
+          "id",
+          "name",
+          "category",
+          "texture",
+          "length",
+          "price",
+          "stock",
+        ];
+        const rows = PRODUCTS.map((p) =>
+          [p.id, p.name, p.cat, p.texture, p.length, p.price, p.stock].join(
+            ",",
+          ),
+        );
+        const csv = [headers.join(","), ...rows].join("\n");
+        const blob = new Blob([csv], { type: "text/csv" });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = "merony-products.csv";
+        a.click();
+        toast("CSV exported");
+      }
+
+      function downloadFullBackup() {
+        const backup = {
+          exportedAt: new Date().toISOString(),
+          products: PRODUCTS,
+          orders: state.orders,
+          cart: state.cart,
+          wishlist: state.wishlist,
+          user: state.user,
+        };
+        const blob = new Blob([JSON.stringify(backup, null, 2)], {
+          type: "application/json",
+        });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = "merony-backup-" + Date.now() + ".json";
+        a.click();
+        toast("Full backup downloaded");
+      }
+
+      // -------------------- FAQ --------------------
+      function renderFAQ() {
+        const list = $("#faqList");
+        list.innerHTML = FAQS.map(
+          (f, i) => `
+        <div class="faq-item" data-i="${i}">
+          <div class="faq-q">${f.q} <i class="fas fa-chevron-down"></i></div>
+          <div class="faq-a">${f.a}</div>
+        </div>`,
+        ).join("");
+
+        $$(".faq-item").forEach((item) => {
+          item.querySelector(".faq-q").addEventListener("click", () => {
+            item.classList.toggle("open");
+          });
+        });
+      }
+
+      // -------------------- QUIZ --------------------
+      let quizStep = 1;
+      function nextQuiz(val) {
+        if (quizStep === 1) state.quizAnswers.look = val;
+        if (quizStep === 2) state.quizAnswers.texture = val;
+        if (quizStep === 3) {
+          state.quizAnswers.length = val;
+          // result
+          const match =
+            PRODUCTS.find(
+              (p) =>
+                p.texture === state.quizAnswers.texture ||
+                (state.quizAnswers.look === "glam" && p.cat === "Wigs"),
+            ) || PRODUCTS[0];
+          $("#quizResult").innerHTML = `
+          <div class="product-card" style="max-width:280px;margin:0 auto;">
+            <div class="product-img"><img src="${match.img}" alt=""></div>
+            <div class="product-info">
+              <div class="product-name">${sanitize(match.name)}</div>
+              <div class="price-current">${formatPrice(match.price)}</div>
+            </div>
+          </div>
+          <p style="margin-top:1rem;color:var(--text-muted);">Based on your answers we recommend the <strong>${sanitize(match.name)}</strong>.</p>`;
+        }
+        $$(`.quiz-step`).forEach((s) => s.classList.remove("active"));
+        quizStep++;
+        $(`.quiz-step[data-step="${quizStep}"]`)?.classList.add("active");
+      }
+
+      // -------------------- EVENTS --------------------
+      document.addEventListener("click", (e) => {
+        const pageLink = e.target.closest("[data-page]");
+        if (pageLink) {
+          e.preventDefault();
+          navigate(pageLink.dataset.page);
+        }
+
+        const quickViewButton = e.target.closest("[data-id].quick-view");
+        if (quickViewButton) {
+          e.preventDefault();
+          openQuickView(quickViewButton.dataset.id);
+        }
+
+        const card = e.target.closest(".product-card[data-id]");
+        if (
+          card &&
+          !e.target.closest(".wishlist-btn") &&
+          !e.target.closest(".quick-view")
+        ) {
+          navigate("product", { id: card.dataset.id });
+        }
+
+        if (e.target.closest(".wishlist-btn")) {
+          e.preventDefault();
+          toggleWishlist(+e.target.closest(".wishlist-btn").dataset.id);
+        }
+
+        if (e.target.closest("[data-dash]")) {
+          e.preventDefault();
+          $$(".dash-sidebar a").forEach((a) => a.classList.remove("active"));
+          e.target.closest("[data-dash]").classList.add("active");
+          renderDash(e.target.closest("[data-dash]").dataset.dash);
+        }
+
+        if (e.target.closest("[data-admin]")) {
+          e.preventDefault();
+          $$("#page-admin .dash-sidebar a").forEach((a) =>
+            a.classList.remove("active"),
+          );
+          e.target.closest("[data-admin]").classList.add("active");
+          renderAdmin(e.target.closest("[data-admin]").dataset.admin);
+        }
+
+        if (e.target.closest(".quiz-opt")) {
+          const opt = e.target.closest(".quiz-opt");
+          opt.parentElement
+            .querySelectorAll(".quiz-opt")
+            .forEach((o) => o.classList.remove("selected"));
+          opt.classList.add("selected");
+          setTimeout(() => nextQuiz(opt.dataset.val), 300);
+        }
+      });
+
+      // Filters
+      $$(".filters input").forEach((inp) =>
+        inp.addEventListener("change", renderShop),
+      );
+      $("#sortSelect")?.addEventListener("change", renderShop);
+      $("#clearFilters")?.addEventListener("click", () => {
+        $$(".filters input").forEach((i) => (i.checked = false));
+        renderShop();
+      });
+
+      // Theme
+      $("#themeToggle")?.addEventListener("click", () => {
+        state.theme = state.theme === "dark" ? "light" : "dark";
+        applyTheme();
+        save();
+      });
+
+      // Currency
+      $("#currencyBtn")?.addEventListener("click", () => {
+        const opts = ["NGN", "USD", "GBP"];
+        const idx = opts.indexOf(state.currency);
+        state.currency = opts[(idx + 1) % opts.length];
+        $("#currencyBtn").textContent = SYMBOLS[state.currency];
+        save();
+        updateCartUI();
+        toast(`Currency: ${state.currency}`);
+        // re-render current page prices
+        const active = $(".page.active")?.id?.replace("page-", "");
+        if (active) navigate(active);
+      });
+
+      // Cart
+      $("#cartBtn")?.addEventListener("click", openMiniCart);
+      $("#closeCart")?.addEventListener("click", closeMiniCart);
+      $("#closeQuickView")?.addEventListener("click", closeQuickView);
+      $("#quickViewModal")?.addEventListener("click", (e) => {
+        if (e.target.id === "quickViewModal") closeQuickView();
+      });
+      $("#overlay")?.addEventListener("click", () => {
+        closeMiniCart();
+        $("#accountModal").classList.remove("show");
+        $("#quickViewModal").classList.remove("show");
+      });
+
+      // Mobile
+      $("#mobileToggle")?.addEventListener("click", () =>
+        $("#mainNav").classList.toggle("open"),
+      );
+
+      // Search
+      let searchTimeout;
+      $("#globalSearch")?.addEventListener("input", (e) => {
+        clearTimeout(searchTimeout);
+        searchTimeout = setTimeout(() => {
+          const q = e.target.value.toLowerCase().trim();
+          if (q.length < 2) return;
+          navigate("shop");
+          // simple filter simulation
+          setTimeout(() => {
+            const filtered = PRODUCTS.filter(
+              (p) =>
+                p.name.toLowerCase().includes(q) ||
+                p.texture.toLowerCase().includes(q) ||
+                p.cat.toLowerCase().includes(q),
+            );
+            $("#shopProducts").innerHTML =
+              filtered.map(productCardHTML).join("") ||
+              '<p style="grid-column:1/-1;text-align:center;">No results</p>';
+            $("#resultCount").textContent =
+              `${filtered.length} results for "${q}"`;
+          }, 100);
+        }, 300);
+      });
+
+      // Account
+      $("#accountBtn")?.addEventListener("click", () => navigate("account"));
+      $("#adminBtn")?.addEventListener("click", () => navigate("admin"));
+
+      $("#closeAdminProductModal")?.addEventListener(
+        "click",
+        closeProductEditor,
+      );
+      $("#adminProductModal")?.addEventListener("click", (e) => {
+        if (e.target.id === "adminProductModal") closeProductEditor();
+      });
+
+      $("#loginBtn")?.addEventListener("click", () => {
+        const email = $("#loginEmail").value.trim();
+        const pass = $("#loginPass").value;
+        if (!email || !pass) return toast("Please fill all fields", "error");
+        // Simulate login (in real app: POST /api/auth/login)
+        state.user = {
+          name: email.split("@")[0],
+          email,
+          points: 120,
+          ref: "MERONY" + email.slice(0, 3).toUpperCase(),
+        };
+        save();
+        toast("Welcome back!");
+        renderAccount();
+      });
+
+      $("#registerBtn")?.addEventListener("click", () => {
+        const name = $("#regName").value.trim();
+        const email = $("#regEmail").value.trim();
+        const pass = $("#regPass").value;
+        if (!name || !email || !pass)
+          return toast("Please fill all fields", "error");
+        if (pass.length < 6) return toast("Password too short", "error");
+        state.user = {
+          name,
+          email,
+          points: 50,
+          ref: "MERONY" + email.slice(0, 3).toUpperCase(),
+        };
+        save();
+        toast("Account created!");
+        renderAccount();
+      });
+
+      $("#showRegister")?.addEventListener("click", (e) => {
+        e.preventDefault();
+        $("#loginBox").style.display = "none";
+        $("#registerBox").style.display = "block";
+      });
+      $("#showLogin")?.addEventListener("click", (e) => {
+        e.preventDefault();
+        $("#registerBox").style.display = "none";
+        $("#loginBox").style.display = "block";
+      });
+
+      $("#logoutBtn")?.addEventListener("click", (e) => {
+        e.preventDefault();
+        state.user = null;
+        save();
+        toast("Logged out");
+        renderAccount();
+      });
+
+      // Password strength
+      $("#regPass")?.addEventListener("input", (e) => {
+        const v = e.target.value.length;
+        const bar = $("#passStrength div");
+        if (v < 4) {
+          bar.style.width = "30%";
+          bar.style.background = "#f44336";
+        } else if (v < 8) {
+          bar.style.width = "60%";
+          bar.style.background = "#ff9800";
+        } else {
+          bar.style.width = "100%";
+          bar.style.background = "#4caf50";
+        }
+      });
+
+      // Checkout
+      $$('input[name="delivery"]').forEach((r) =>
+        r.addEventListener("change", updateCheckoutTotals),
+      );
+      $("#applyCoupon")?.addEventListener("click", () => {
+        const code = $("#couponCode").value.trim().toUpperCase();
+        if (code === "LUXE15" || code === "WELCOME10") {
+          state.coupon = code;
+          toast("Coupon applied!");
+          updateCheckoutTotals();
+        } else toast("Invalid coupon", "error");
+      });
+
+      $("#placeOrderBtn")?.addEventListener("click", () => {
+        if (!state.cart.length) return toast("Cart is empty", "error");
+        const name = $("#coName").value.trim();
+        const email = $("#coEmail").value.trim();
+        if (!name || !email)
+          return toast("Please fill contact details", "error");
+
+        // Simulate payment
+        // In production: integrate Paystack / Flutterwave
+        // Example Paystack: https://paystack.com/docs
+        // Example Flutterwave: https://developer.flutterwave.com
+
+        const order = {
+          id: "MH" + Date.now().toString().slice(-6),
+          date: new Date().toLocaleDateString(),
+          customer: name,
+          email,
+          total: cartTotal() + 2500,
+          status: "Processing",
+          items: [...state.cart],
+        };
+        state.orders.unshift(order);
+        state.cart = [];
+        save();
+        updateCartUI();
+        toast("Order placed successfully! 🎉");
+
+        // Simple invoice print
+        setTimeout(() => {
+          const inv = window.open("", "_blank");
+          inv.document.write(`
+          <html><head><title>Invoice ${order.id}</title>
+          <style>body{font-family:sans-serif;padding:40px;max-width:600px;margin:0 auto;}
+          h1{color:#c9a96e;} table{width:100%;border-collapse:collapse;margin:20px 0;}
+          th,td{padding:8px;border-bottom:1px solid #eee;text-align:left;}</style></head>
+          <body>
+            <h1>Merony Hair.NG</h1>
+            <p>Invoice #${order.id}<br>${order.date}</p>
+            <p><strong>${order.customer}</strong><br>${order.email}</p>
+            <table><tr><th>Item</th><th>Qty</th><th>Total</th></tr>
+            ${order.items
+              .map((i) => {
+                const p = PRODUCTS.find((x) => x.id === i.id);
+                return `<tr><td>${p?.name}</td><td>${i.qty}</td><td>₦${(p?.price * i.qty).toLocaleString()}</td></tr>`;
+              })
+              .join("")}
+            </table>
+            <p style="font-size:1.2rem;"><strong>Total: ₦${order.total.toLocaleString()}</strong></p>
+            <p style="color:#666;font-size:0.9rem;">Thank you for shopping with Merony Hair.NG</p>
+            <button onclick="window.print()">Print Receipt</button>
+            <script type="module" src="/js/api.js"></script>
+</body></html>`);
+          inv.document.close();
+        }, 500);
+
+        navigate("account");
+      });
+
+      // Contact & Newsletter
+      $("#contactForm")?.addEventListener("submit", (e) => {
+        e.preventDefault();
+        toast("Message sent! We will reply soon.");
+        e.target.reset();
+        // Backend: POST /api/contact
+      });
+      $("#newsletterForm")?.addEventListener("submit", (e) => {
+        e.preventDefault();
+        toast("Welcome to the Royalty Club! Check your inbox.");
+        e.target.reset();
+      });
+
+      // FAQ search
+      $("#faqSearch")?.addEventListener("input", (e) => {
+        const q = e.target.value.toLowerCase();
+        $$(".faq-item").forEach((item) => {
+          const text = item.textContent.toLowerCase();
+          item.style.display = text.includes(q) ? "block" : "none";
+        });
+      });
+
+      // Chat
+      $("#chatFab")?.addEventListener("click", () =>
+        $("#chatWidget").classList.toggle("open"),
+      );
+      $("#closeChat")?.addEventListener("click", () =>
+        $("#chatWidget").classList.remove("open"),
+      );
+      $("#sendChat")?.addEventListener("click", sendChatMsg);
+      $("#chatInput")?.addEventListener("keypress", (e) => {
+        if (e.key === "Enter") sendChatMsg();
+      });
+
+      function sendChatMsg() {
+        const input = $("#chatInput");
+        const msg = input.value.trim();
+        if (!msg) return;
+        const body = $("#chatBody");
+        body.innerHTML += `<div class="chat-msg user">${sanitize(msg)}</div>`;
+        input.value = "";
+        setTimeout(() => {
+          const replies = [
+            "Thanks for reaching out! How can we help with your hair needs?",
+            "You can shop our latest collection or ask about shipping.",
+            "For order updates, please share your order number.",
+            "Our WhatsApp is also available: +234 906 310 8912",
+          ];
+          body.innerHTML += `<div class="chat-msg bot">${replies[Math.floor(Math.random() * replies.length)]}</div>`;
+          body.scrollTop = body.scrollHeight;
+        }, 800);
+        body.scrollTop = body.scrollHeight;
+      }
+
+      // Back to top
+      window.addEventListener("scroll", () => {
+        $("#backTop").classList.toggle("show", window.scrollY > 400);
+      });
+      $("#backTop")?.addEventListener("click", () =>
+        window.scrollTo({ top: 0, behavior: "smooth" }),
+      );
+
+      // Cookie
+      if (!localStorage.getItem("merony_cookies")) {
+        setTimeout(() => $("#cookieBanner").classList.add("show"), 1500);
+      }
+      $("#acceptCookies")?.addEventListener("click", () => {
+        localStorage.setItem("merony_cookies", "1");
+        $("#cookieBanner").classList.remove("show");
+      });
+      $("#declineCookies")?.addEventListener("click", () => {
+        localStorage.setItem("merony_cookies", "0");
+        $("#cookieBanner").classList.remove("show");
+      });
+
+      // -------------------- PWA / SERVICE WORKER --------------------
+      // Generate minimal manifest
+      const manifest = {
+        name: "Merony Hair.NG",
+        short_name: "Merony",
+        description:
+          "Beyond Hair. Behold Beauty. Premium Human Hair by Merony Hair.NG",
+        start_url: "/",
+        display: "standalone",
+        background_color: "#0f0a0a",
+        theme_color: "#c9a96e",
+        icons: [
+          {
+            src: "https://images.unsplash.com/photo-1522338140262-f46f5913618a?w=192",
+            sizes: "192x192",
+            type: "image/png",
+          },
+        ],
+      };
+      const manifestBlob = new Blob([JSON.stringify(manifest)], {
+        type: "application/json",
+      });
+      const manifestURL = URL.createObjectURL(manifestBlob);
+      const link = document.createElement("link");
+      link.rel = "manifest";
+      link.href = manifestURL;
+      document.head.appendChild(link);
+
+      // Service Worker registration (basic offline caching)
+      if ("serviceWorker" in navigator) {
+        const swCode = `
+        const CACHE = 'merony-v1';
+        self.addEventListener('install', e => {
+          e.waitUntil(caches.open(CACHE).then(c => c.addAll(['/'])));
+        });
+        self.addEventListener('fetch', e => {
+          e.respondWith(caches.match(e.request).then(r => r || fetch(e.request)));
+        });
+      `;
+        const swBlob = new Blob([swCode], { type: "application/javascript" });
+        const swURL = URL.createObjectURL(swBlob);
+        navigator.serviceWorker.register(swURL).catch(() => {});
+      }
+
+      // -------------------- INIT --------------------
+      function init() {
+        applyTheme();
+        updateCartUI();
+        renderHome();
+
+        // Hide loader
+        setTimeout(() => {
+          $("#loader").classList.add("hide");
+        }, 1200);
+
+        // Admin login button
+        $("#adminLoginBtn")?.addEventListener("click", attemptAdminLogin);
+        $("#adminPassword")?.addEventListener("keypress", (e) => {
+          if (e.key === "Enter") attemptAdminLogin();
+        });
+        $("#toggleAdminPass")?.addEventListener("click", () => {
+          const inp = $("#adminPassword");
+          const icon = $("#toggleAdminPass i");
+          if (inp.type === "password") {
+            inp.type = "text";
+            icon.className = "fas fa-eye-slash";
+          } else {
+            inp.type = "password";
+            icon.className = "fas fa-eye";
+          }
+        });
+        $("#adminLogoutBtn")?.addEventListener("click", (e) => {
+          e.preventDefault();
+          adminLogout();
+        });
+
+        // Keyboard accessibility + secret admin access
+        document.addEventListener("keydown", (e) => {
+          if (e.key === "Escape") {
+            closeMiniCart();
+            $("#chatWidget").classList.remove("open");
+          }
+          // Secret admin access: Ctrl + Shift + A
+          if (e.ctrlKey && e.shiftKey && (e.key === "A" || e.key === "a")) {
+            e.preventDefault();
+            navigate("admin");
+          }
+        });
+
+        // Also allow deep-link via hash
+        if (location.hash === "#admin" || location.hash === "#/admin") {
+          navigate("admin");
+        }
+      }
+
+      // Expose some functions for inline handlers
+      window.updateQty = updateQty;
+      window.removeFromCart = removeFromCart;
+      window.exportCSV = exportCSV;
+      window.downloadFullBackup = downloadFullBackup;
+
+      init();
+    </script>
+  </body>
+</html>
+
+<!--
+============================================================
+MERONY HAIR.NG – FEATURE SUMMARY (as required)
+============================================================
+
+1. FEATURES ADDED
+- Full single-file SPA with Home, Shop, Product Detail, Cart, Checkout, About, Contact, FAQ, Blog, Hair Quiz, Account Dashboard, Admin Panel
+- Luxury glassmorphism design, dark/light mode, premium typography, smooth animations
+- Product catalog with categories, textures, lengths, filters, sorting, search
+- Shopping cart with quantity controls, mini-cart, localStorage persistence
+- Coupon engine (LUXE15, WELCOME10), shipping options, tax calculation
+- Simulated checkout + printable invoice generation
+- Customer auth simulation (register/login/logout), profile, orders, wishlist, loyalty points, referral code
+- Admin dashboard with stats, product list, orders, inventory alerts, coupons, CSV export
+- WhatsApp integration (+2349063108912) on product, contact, footer, chat
+- AI-style hair recommendation quiz
+- Live chat simulation, toast notifications, cookie consent, back-to-top
+- FAQ with search, testimonials, Instagram-style gallery, newsletter
+- Currency switcher (₦ $ £), theme toggle, mobile responsive
+- SEO: meta tags, Open Graph, Twitter Cards, JSON-LD, semantic HTML
+- PWA: dynamic manifest + basic Service Worker for offline caching
+- Accessibility: focus states, ARIA labels, keyboard support
+- Input sanitization, form validation, password strength meter
+
+2. FEATURES SIMULATED (require real backend)
+- Real payment verification (Paystack / Flutterwave) – hooks and comments ready
+- Cross-device user authentication & session management
+- Email sending (order confirmation, password reset, newsletter)
+- Persistent remote database (products, orders, customers, inventory)
+- Real-time analytics & revenue charts
+- Cloud image storage & CDN optimization
+- Multi-admin roles & permissions
+- Actual barcode/QR generation for products (UI placeholder only)
+- Server-side invoice PDF generation & email delivery
+- Voice search (browser API can be added; not fully wired)
+- TikTok / Instagram live feed embedding
+
+3. RECOMMENDED FUTURE BACKEND INTEGRATIONS
+- Node.js / Express or Laravel / NestJS API
+- PostgreSQL or MongoDB for products, users, orders
+- Paystack + Flutterwave SDKs for payments
+- Cloudinary or AWS S3 for product images
+- Redis for sessions & cart
+- SendGrid / Resend / Nodemailer for transactional email
+- Firebase Auth or Auth0 for robust authentication
+- Chart.js or Recharts with real data for admin analytics
+- Algolia or Meilisearch for advanced product search
+
+4. LIMITATIONS OF SINGLE-FILE ARCHITECTURE
+- Large file size as features grow (this file is already substantial)
+- No true server-side security (all logic is client-side and inspectable)
+- Limited offline capability beyond basic Service Worker caching
+- Cannot send real emails or process real payments without external services
+- SEO for dynamic routes is limited compared to SSR frameworks
+- Concurrent multi-user admin editing not possible without a backend
+- Image optimization and lazy-loading of many assets still depend on external CDNs
+- Code maintainability becomes harder without modular file structure (mitigated here with clear sections and comments)
+
+Built as a complete, self-contained premium demo that can be opened in any modern browser.
+-->

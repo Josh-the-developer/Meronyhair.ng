@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://meronyhair.ng/sitemap.xml
