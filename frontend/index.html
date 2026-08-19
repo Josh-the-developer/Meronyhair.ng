@@ -3783,20 +3783,29 @@
         }
       }
 
-      // -------------------- ADMIN (SECURE – calls real backend) --------------------
-      // CRITICAL SECURITY FIX: No credentials are stored in the frontend.
-      // All authentication happens against POST /api/auth/admin/login
-      // which validates against hashed password in PostgreSQL / env.
+      // -------------------- ADMIN (SECURE) --------------------
+      /* 
+      DEMO CREDENTIALS (easy to change later):
+      Email: chidiebubejoshua19@gmail.com
+      Password: josh123
+      This is CLIENT-SIDE ONLY authentication for demonstration.
+      In production, replace with real backend auth (JWT / session cookies).
+    */
+      const ADMIN_CREDENTIALS = {
+        email: "chidiebubejoshua19@gmail.com",
+        password: "josh123",
+      };
 
       let adminSession = JSON.parse(
         localStorage.getItem("merony_admin_session") || "null",
       );
       let adminLoginAttempts = 0;
       let adminSessionTimer = null;
-      const ADMIN_SESSION_TIMEOUT = 30 * 60 * 1000; // 30 minutes client-side soft timeout
+      const ADMIN_SESSION_TIMEOUT = 30 * 60 * 1000; // 30 minutes
 
       function showAdminGate() {
-        if (adminSession && adminSession.token && adminSession.expires > Date.now()) {
+        // Always show login gate first unless a valid session exists
+        if (adminSession && adminSession.expires > Date.now()) {
           unlockAdminDashboard();
         } else {
           adminSession = null;
@@ -3813,7 +3822,7 @@
         $("#adminLoginGate").style.display = "none";
         $("#adminDashboard").style.display = "block";
         $("#adminSessionInfo").textContent =
-          `Signed in as ${(adminSession.email || "admin").split("@")[0]}`;
+          `Signed in as ${adminSession.email.split("@")[0]}`;
         renderAdmin("dashboard");
         startAdminSessionTimer();
       }
@@ -3839,7 +3848,7 @@
         );
       }
 
-      async function attemptAdminLogin() {
+      function attemptAdminLogin() {
         const email = ($("#adminEmail").value || "").trim().toLowerCase();
         const password = $("#adminPassword").value || "";
         const remember = $("#adminRemember")?.checked;
@@ -3851,43 +3860,58 @@
           return;
         }
 
-        if (!email || !password) {
-          $("#adminLoginError").style.display = "block";
-          $("#adminLoginError").textContent = "Email and password are required.";
-          return;
-        }
-
-        try {
-          const res = await fetch("/api/auth/admin/login", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ email, password }),
-          });
-          const data = await res.json();
-
-          if (!res.ok || !data.token) {
-            adminLoginAttempts++;
-            $("#adminLoginError").style.display = "block";
-            $("#adminLoginError").textContent =
-              data.message || `Invalid credentials. Attempt ${adminLoginAttempts}/5`;
-            return;
-          }
-
+        // Client-side demo check
+        if (
+          email === ADMIN_CREDENTIALS.email.toLowerCase() &&
+          password === ADMIN_CREDENTIALS.password
+        ) {
           adminLoginAttempts = 0;
           adminSession = {
-            email: data.admin?.email || email,
-            token: data.token,
-            role: data.admin?.role || "admin",
-            expires: Date.now() + (remember ? 7 * 24 * 60 * 60 * 1000 : ADMIN_SESSION_TIMEOUT),
+            email: ADMIN_CREDENTIALS.email,
+            expires: Date.now() + ADMIN_SESSION_TIMEOUT,
             loginAt: new Date().toISOString(),
           };
-          localStorage.setItem("merony_admin_session", JSON.stringify(adminSession));
+          if (remember) {
+            // Extend for demo (still local only)
+            adminSession.expires = Date.now() + 7 * 24 * 60 * 60 * 1000;
+          }
+          localStorage.setItem(
+            "merony_admin_session",
+            JSON.stringify(adminSession),
+          );
           unlockAdminDashboard();
           toast("Welcome, Administrator");
-        } catch (err) {
+          // Log the successful login (simulated security log)
+          const logs = JSON.parse(
+            localStorage.getItem("merony_admin_logs") || "[]",
+          );
+          logs.unshift({
+            type: "login_success",
+            time: new Date().toLocaleString(),
+            email,
+          });
+          localStorage.setItem(
+            "merony_admin_logs",
+            JSON.stringify(logs.slice(0, 50)),
+          );
+        } else {
+          adminLoginAttempts++;
           $("#adminLoginError").style.display = "block";
           $("#adminLoginError").textContent =
-            "Unable to reach authentication server. Please try again.";
+            `Invalid credentials. Attempt ${adminLoginAttempts}/5`;
+          // Log failed attempt
+          const logs = JSON.parse(
+            localStorage.getItem("merony_admin_logs") || "[]",
+          );
+          logs.unshift({
+            type: "login_failed",
+            time: new Date().toLocaleString(),
+            email: email || "(empty)",
+          });
+          localStorage.setItem(
+            "merony_admin_logs",
+            JSON.stringify(logs.slice(0, 50)),
+          );
         }
       }
 
@@ -4692,8 +4716,7 @@
             <p style="font-size:1.2rem;"><strong>Total: ₦${order.total.toLocaleString()}</strong></p>
             <p style="color:#666;font-size:0.9rem;">Thank you for shopping with Merony Hair.NG</p>
             <button onclick="window.print()">Print Receipt</button>
-            <script type="module" src="/js/api.js"></script>
-</body></html>`);
+          </body></html>`);
           inv.document.close();
         }, 500);
 
